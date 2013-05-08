@@ -1,0 +1,16 @@
+propel:
+  weblog_post:
+    _attributes: { phpName: Post }
+    id:
+    title:       varchar(255)
+    excerpt:     longvarchar
+    body:        longvarchar
+    created_at:
+  weblog_comment:
+    _attributes: { phpName: Comment }
+    id:
+    post_id:
+    author:      varchar(255)
+    email:       varchar(255)
+    body:        longvarchar
+    created_at:

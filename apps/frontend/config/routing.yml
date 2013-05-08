@@ -1,0 +1,20 @@
+# default rules
+homepage:
+  url:   /
+  param: { module: homeGuest, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+# custom rules
+homeGuest:
+  url:   /homeGuest/index
+  param: { module: homeGuest , action: index }
+
+action_to_template:
+  url:   /homeGuest/actiontotem
+  param: { module: homeGuest , action: actiontotem }
