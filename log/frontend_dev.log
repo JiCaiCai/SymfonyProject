@@ -1695,3 +1695,456 @@ May 08 10:35:37 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (9)
 May 08 10:35:37 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
 May 08 10:35:37 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 6.24 ms (1)
 May 08 10:35:37 symfony [info] {sfWebResponse} Send content (53707 o)
+May 08 11:47:39 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 11:47:39 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 11:47:39 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 11:47:39 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 11:47:39 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 11:47:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 11:47:39 symfony [info] {myUser} Automatic user logout due to timeout
+May 08 11:47:39 symfony [info] {myUser} User is not authenticated
+May 08 11:47:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 11:47:39 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 11:47:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 11:47:39 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 11:47:39 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 11:50:08 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 11:50:08 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 11:50:08 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 11:50:08 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 11:50:08 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 11:50:08 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 11:50:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 11:50:08 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 11:50:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 11:50:08 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 11:50:08 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 11:50:10 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 11:50:10 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 11:50:10 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 11:50:10 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 11:50:10 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 11:50:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 11:50:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 11:50:10 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 11:50:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 11:50:10 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 11:50:10 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 11:57:20 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 11:57:20 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 11:57:20 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 11:57:20 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 11:57:20 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 11:57:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 11:57:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 11:57:20 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 11:57:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 11:57:20 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 11:57:20 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 11:57:20 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 11:57:20 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 11:57:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 11:57:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 11:57:20 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 11:57:20 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 11:57:20 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 8.65 ms (1)
+May 08 11:57:20 symfony [info] {sfWebResponse} Send content (53873 o)
+May 08 12:00:33 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 12:00:33 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 12:00:33 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 12:00:33 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 12:00:33 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 12:00:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 12:00:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 12:00:33 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 12:00:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 12:00:33 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 12:00:33 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 12:00:54 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 12:00:54 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 12:00:54 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 12:00:54 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 12:00:54 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 12:00:54 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 12:00:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 12:00:54 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 12:00:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 12:00:54 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 12:00:54 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 12:00:56 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 12:00:56 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 12:00:56 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 12:00:56 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 12:00:56 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 12:00:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 12:00:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 12:00:56 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 12:00:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 12:00:56 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 12:00:56 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 12:00:59 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 12:00:59 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 12:00:59 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 12:00:59 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 12:00:59 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 12:00:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 12:00:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 12:00:59 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 12:00:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 12:00:59 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 12:00:59 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:10:35 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:10:35 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:10:35 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:10:35 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:10:35 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:10:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:10:35 symfony [info] {myUser} Automatic user logout due to timeout
+May 08 13:10:35 symfony [info] {myUser} User is not authenticated
+May 08 13:10:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:10:35 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:10:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:10:35 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:10:35 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:12:05 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:12:05 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:12:05 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:12:05 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:12:05 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:12:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:12:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:12:05 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:12:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:12:05 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:12:05 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:12:05 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:12:05 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:12:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:12:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:12:05 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:12:05 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:12:05 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.81 ms (1)
+May 08 13:12:05 symfony [info] {sfWebResponse} Send content (53873 o)
+May 08 13:23:57 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:23:57 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:23:57 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:23:57 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:23:57 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:23:57 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:23:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:23:57 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:23:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:23:57 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:23:57 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:23:57 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:23:57 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:23:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:23:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:23:57 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (9)
+May 08 13:23:57 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:23:57 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 8.83 ms (1)
+May 08 13:23:57 symfony [info] {sfWebResponse} Send content (54245 o)
+May 08 13:25:44 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:25:44 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:25:44 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:25:44 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:25:44 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:25:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:25:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:25:44 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:25:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:25:44 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:25:44 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:25:44 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:25:44 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:25:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:25:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:25:44 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:25:44 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:25:44 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 8.64 ms (1)
+May 08 13:25:44 symfony [info] {sfWebResponse} Send content (54067 o)
+May 08 13:28:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:28:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:28:26 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:28:26 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:28:26 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:28:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:28:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:28:26 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:28:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:28:26 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:28:26 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:28:26 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:28:26 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:28:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:28:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:28:26 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:28:26 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:28:26 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 8.63 ms (1)
+May 08 13:28:26 symfony [info] {sfWebResponse} Send content (54067 o)
+May 08 13:29:23 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:23 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:23 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:23 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:23 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:23 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:23 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:23 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:23 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:23 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:23 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+May 08 13:29:23 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.15 ms (1)
+May 08 13:29:23 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 9.22 ms (1)
+May 08 13:29:23 symfony [info] {sfWebResponse} Send content (54303 o)
+May 08 13:29:24 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:24 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:24 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:24 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:24 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:24 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:24 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:24 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:24 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:24 symfony [info] {sfWebDebugLogger} Configuration 0.93 ms (9)
+May 08 13:29:24 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:24 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.85 ms (1)
+May 08 13:29:24 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:29:25 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:25 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:25 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:25 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:25 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:25 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:25 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:25 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:25 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:25 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:25 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:29:25 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:25 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.87 ms (1)
+May 08 13:29:25 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:29:29 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:29 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:29 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:29 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:29 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:29 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:29 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:29 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:29 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:29 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:29 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:29:29 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:29 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.86 ms (1)
+May 08 13:29:29 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:29:31 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:31 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:31 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:31 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:31 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:31 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:31 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:31 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:31 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:31 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:31 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:29:31 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:31 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.84 ms (1)
+May 08 13:29:31 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:32 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:32 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:32 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:32 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:32 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:32 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:29:32 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:32 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.83 ms (1)
+May 08 13:29:32 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:32 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:32 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:32 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:32 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:32 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:32 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (9)
+May 08 13:29:32 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:32 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.85 ms (1)
+May 08 13:29:32 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:33 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:33 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:33 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:33 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:33 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:33 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (9)
+May 08 13:29:33 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:33 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.91 ms (1)
+May 08 13:29:33 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:33 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:33 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:33 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:33 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:33 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:33 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (9)
+May 08 13:29:33 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:33 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.91 ms (1)
+May 08 13:29:33 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:29:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:29:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:29:34 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:29:34 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:29:34 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:29:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:29:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:29:34 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:29:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:29:34 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:29:34 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:29:34 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:34 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:29:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:29:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:29:34 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:29:34 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:29:34 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 7.96 ms (1)
+May 08 13:29:34 symfony [info] {sfWebResponse} Send content (54333 o)
+May 08 13:47:07 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:47:07 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:47:07 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:47:07 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:47:07 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:47:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:47:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:47:07 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:47:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:47:07 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:47:07 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:47:07 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:47:07 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:47:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:47:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:47:07 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (9)
+May 08 13:47:07 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:47:07 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 8.26 ms (1)
+May 08 13:47:07 symfony [info] {sfWebResponse} Send content (54397 o)
+May 08 13:47:14 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:47:14 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:47:14 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:47:14 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:47:14 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:47:14 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SubmitForm with parameters array (  'module' => 'homeGuest',  'action' => 'SubmitForm',)
+May 08 13:47:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:47:14 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:47:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:47:14 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSubmitForm()"
+May 08 13:47:14 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/SubmitFormSuccess.php"
+May 08 13:47:14 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:47:14 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:47:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:47:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:47:14 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:47:14 symfony [info] {sfWebDebugLogger} Action "homeGuest/SubmitForm" 0.15 ms (1)
+May 08 13:47:14 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/SubmitForm" 7.74 ms (1)
+May 08 13:47:14 symfony [info] {sfWebResponse} Send content (54561 o)
+May 08 13:48:25 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:48:25 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:48:25 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:48:25 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:48:25 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:48:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/index with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 08 13:48:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:48:25 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:48:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:48:25 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 08 13:48:25 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 08 13:48:25 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:48:25 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:48:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:48:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:48:25 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+May 08 13:48:25 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.14 ms (1)
+May 08 13:48:25 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 8.07 ms (1)
+May 08 13:48:25 symfony [info] {sfWebResponse} Send content (54397 o)
+May 08 13:48:30 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 08 13:48:30 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 08 13:48:30 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 08 13:48:30 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 08 13:48:30 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 08 13:48:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SubmitForm with parameters array (  'module' => 'homeGuest',  'action' => 'SubmitForm',)
+May 08 13:48:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 13:48:30 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 08 13:48:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 13:48:30 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSubmitForm()"
+May 08 13:48:30 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/SubmitFormSuccess.php"
+May 08 13:48:30 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:48:30 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 08 13:48:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 13:48:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 13:48:30 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+May 08 13:48:30 symfony [info] {sfWebDebugLogger} Action "homeGuest/SubmitForm" 0.15 ms (1)
+May 08 13:48:30 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/SubmitForm" 7.63 ms (1)
+May 08 13:48:30 symfony [info] {sfWebResponse} Send content (54561 o)

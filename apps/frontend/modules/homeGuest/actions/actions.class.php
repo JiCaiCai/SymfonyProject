@@ -3,6 +3,7 @@ class homeGuestActions extends sfActions
 {
   public function executeIndex($request)
   {
+    $this->card_list = array('VISA'=>'Visa','MAST'=>'Master','AMEX'=>'American Express');
     return sfView::SUCCESS;
   }
 
@@ -28,6 +29,12 @@ class homeGuestActions extends sfActions
      
 
     return sfView::SUCCESS;
+  }
+
+  public function executeSubmitForm()
+  {
+    $this->name = $this->getRequestParameter('name');
+    $this->pay_type = $this->getRequestParameter('pay_type');
   }
 }
 
