@@ -12,15 +12,23 @@
       <div id="navigator" style="display:inline;float:right">
         <ul>
             <li><?php echo link_to('Redirect the first module','homeGuest/index') ?></li>
-            <li><?php echo link_to('List of comments','comment/list') ?>
+            <li><?php echo link_to('AutoLoad Class Test','homeGuest/Actiontotem') ?>
         </ul>
       </div>
       <div id="title">
-        <h1><?php echo link_to('222222222','@homepage') ?></h1>
+        <h1><?php echo link_to('淘宝网','@homepage') ?></h1>
       </div>
 
       <div id="content" style="clear:right">
         <?php echo $sf_data->getRaw('sf_content') ?>
+      </div>
+      <hr />
+      <div id="footer" style="bottom">
+        Applcation Version: <?php echo sfConfig::get('app_version'); ?>
+        <br />
+        WebMaster: <?php echo sfConfig::get('app_mail_web_master'); ?>
+        <br />
+        Contact: <?php echo sfConfig::get('app_mail_contact'); ?>
       </div>
     </div>
   </body>

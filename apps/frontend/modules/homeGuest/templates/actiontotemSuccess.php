@@ -15,6 +15,7 @@
       <?php echo sfConfig::get('first','no data inside'); ?>
       <hr />
       <?php $myPhone = new Phone(); echo $myPhone->price; ?>
+
       <hr />
       <?php if ($comments) : ?>
       <p><?php echo count($comments) ?> comment<?php if (count($comments) > 1) : ?>s<?php endif; ?> to this post.</p>

@@ -1,2 +1,6 @@
 # default values
-#all:
+all:
+  version: '1.0'
+  mail:
+    web_master: 10000@qq.com
+    contact:    20000@qq.com
