@@ -6,16 +6,21 @@ class homeGuestActions extends sfActions
     // First go to this web, user is a guest
     //$this->getUseir()->setAuthenticated(false);
     // Test Class
-    $myPhone = Phone::getInstance();
-    $TestParams = array(
-        'id'=>1,
-        'class'=>$myPhone
-    );
-    echo $TestParams['class']->price."<br />";
-    $yourPhone = $TestParams['class'];
-    $yourPhone->price = $yourPhone->price+1;
-    echo $TestParams['class']->price."<br />";
+//     $myPhone = Phone::getInstance();
+//     $TestParams = array(
+//         'id'=>1,
+//         'class'=>$myPhone
+//     );
+//     echo $TestParams['class']->price."<br />";
 
+    //PHP5中对象是引用传递的，为了修改原来的对象的值，必须使用clone方法。
+//     $yourPhone = clone $TestParams['class'];
+//     //$yourPhone = $TestParams['class'];
+   
+//     $yourPhone->price = $yourPhone->price+1;
+//     echo $TestParams['class']->price."<br />";
+  	//die();
+  	
     $this->card_list = array('VISA'=>'Visa','MAST'=>'Master','AMEX'=>'American Express');
     return sfView::SUCCESS;
   }

@@ -2,9 +2,7 @@
     <div id="container" style="width:500px;margin:0 auto;border:1px solid blue;padding:10px">
 
       <div id="navigator" style="display:inline;float:right">
-        <ul>
-            <li><?php echo link_to('Login','homeGuest/login') ?></li>
-        </ul>
+        <?php //include_partial('currentDate',array('card_list' => $card_list)) ?>
       </div>
 
       <div id="navigator" style="display:inline;float:right">
@@ -36,4 +34,5 @@
         <?php echo select_tag('pay_type',options_for_select($card_list, 'AMEX')); ?>
         <?php echo submit_tag('OK'); ?>
     </div>
+    <div id="item_suggestion"></div>
 
