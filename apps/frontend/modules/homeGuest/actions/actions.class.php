@@ -104,7 +104,7 @@ class homeGuestActions extends sfActions
     echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
     $student->setName('im the kingdom32423423');
 //     $student->setTeacherId($teacher->getId());
-    $student->setTeacherId(100);
+    $student->setTeacherId($teacher->getId());
     StudentPeer::doUpdate($student);
     $student = StudentPeer::retrieveByPK(2);
     echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
