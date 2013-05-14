@@ -1,16 +1,14 @@
 propel:
-  weblog_post:
-    _attributes: { phpName: Post }
+  student:
+    _attributes: { phpName: Student }
     id:
-    title:       varchar(255)
-    excerpt:     longvarchar
-    body:        longvarchar
+    name:        varchar(255)
+    grade:       integer
+    teacher_id:  
     created_at:
-  weblog_comment:
-    _attributes: { phpName: Comment }
+  teacher:
+    _attributes: { phpName: Teacher }
     id:
-    post_id:
-    author:      varchar(255)
-    email:       varchar(255)
-    body:        longvarchar
+    name:        varchar(255)
+    type:        varchar(255)
     created_at:

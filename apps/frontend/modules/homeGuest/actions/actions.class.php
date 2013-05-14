@@ -22,6 +22,7 @@ class homeGuestActions extends sfActions
   	//die();
   	
     $this->card_list = array('VISA'=>'Visa','MAST'=>'Master','AMEX'=>'American Express');
+    $this->grade_list = array('GradeOne'=>'一年级','GradeTwo'=>'二年级','GradeThree'=>'三年级');
     return sfView::SUCCESS;
   }
 
@@ -66,9 +67,34 @@ class homeGuestActions extends sfActions
     $this->pay_type = $this->getRequestParameter('pay_type');
   }
 
-  public function postExecute()
+  public function executeSaveData()
   {
-    //$this->postexecute = true;
+    $student_name = $this->getRequestParameter('student_name');
+    $grade = $this->getRequestParameter('grade');
+    
+    // 增加
+//     $student = new Student();
+//     $student->setName($student_name);
+//     $student->setGrade(1);
+//     $student->save();
+    
+    // 修改
+    
+    // 查询
+    $c = new Criteria();
+    $c->addDescendingOrderByColumn(StudentPeer::CREATED_AT);
+    $c->setLimit(5);
+    $Students = StudentPeer::doSelect($c);
+    
+    foreach ($Students as $student)
+    {
+    	echo 'ID: '.$student->getId().' Name: '.$student->getName().' Register Time: '.$student->getCreatedAt()." <br />";
+    }
+    
+    // 删除
+//     $Students[0]->delete();
+    
+    return $this->renderText("<html><body>  Database operation success !</body></html>");
   }
 }
 

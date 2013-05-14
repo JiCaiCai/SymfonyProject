@@ -11,7 +11,7 @@ all:
     class: sfPropelDatabase
     param:
       classname: PropelPDO
-      dsn: 'mysql:host=localhost;dbname=test'
+      dsn: 'mysql:host=localhost;dbname=school'
       username: root
       password: null
       encoding: utf8

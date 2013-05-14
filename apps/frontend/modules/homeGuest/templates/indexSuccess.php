@@ -14,6 +14,7 @@
         <?php echo input_password_tag('password'); ?>
         <br />
         <?php echo submit_tag('Login'); ?>
+       </form>
       </div>
 
 
@@ -33,6 +34,14 @@
         <?php echo input_tag('name'); ?>
         <?php echo select_tag('pay_type',options_for_select($card_list, 'AMEX')); ?>
         <?php echo submit_tag('OK'); ?>
+      </form>
     </div>
-    <div id="item_suggestion"></div>
 
+    <div>
+      <?php echo form_tag('homeGuest/SaveData'); ?>
+        <?php echo label_for('student_name','Student Name:'); ?>
+        <?php echo input_tag('student_name'); ?>
+        <?php echo select_tag('grade',options_for_select($grade_list, 'GradeOne')); ?>
+        <?php echo submit_tag('Save'); ?>
+      </form>
+    </div>

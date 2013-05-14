@@ -4,42 +4,40 @@
 SET FOREIGN_KEY_CHECKS = 0;
 
 #-----------------------------------------------------------------------------
-#-- weblog_post
+#-- student
 #-----------------------------------------------------------------------------
 
-DROP TABLE IF EXISTS `weblog_post`;
+DROP TABLE IF EXISTS `student`;
 
 
-CREATE TABLE `weblog_post`
+CREATE TABLE `student`
 (
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
-	`title` VARCHAR(255),
-	`excerpt` TEXT,
-	`body` TEXT,
+	`name` VARCHAR(255),
+	`grade` INTEGER,
+	`teacher_id` INTEGER,
 	`created_at` DATETIME,
-	PRIMARY KEY (`id`)
+	PRIMARY KEY (`id`),
+	INDEX `student_FI_1` (`teacher_id`),
+	CONSTRAINT `student_FK_1`
+		FOREIGN KEY (`teacher_id`)
+		REFERENCES `teacher` (`id`)
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
-#-- weblog_comment
+#-- teacher
 #-----------------------------------------------------------------------------
 
-DROP TABLE IF EXISTS `weblog_comment`;
+DROP TABLE IF EXISTS `teacher`;
 
 
-CREATE TABLE `weblog_comment`
+CREATE TABLE `teacher`
 (
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
-	`post_id` INTEGER,
-	`author` VARCHAR(255),
-	`email` VARCHAR(255),
-	`body` TEXT,
+	`name` VARCHAR(255),
+	`type` VARCHAR(255),
 	`created_at` DATETIME,
-	PRIMARY KEY (`id`),
-	INDEX `weblog_comment_FI_1` (`post_id`),
-	CONSTRAINT `weblog_comment_FK_1`
-		FOREIGN KEY (`post_id`)
-		REFERENCES `weblog_post` (`id`)
+	PRIMARY KEY (`id`)
 )Type=InnoDB;
 
 # This restores the fkey checks, after having unset them earlier
