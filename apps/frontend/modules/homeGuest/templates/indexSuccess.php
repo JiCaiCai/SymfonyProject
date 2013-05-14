@@ -1,4 +1,15 @@
     <?php use_helper('Form') ?>
+    <?php use_helper('Number') ?>
+    
+    <?php echo $sf_user->getCulture()."<br />"; ?> 
+    <?php echo 'FR'.format_number(12000.10)."<br />" ?>
+    <?php $sf_user->setCulture('en_US') ?> 
+    <?php echo 'US'.format_number(12000.10)."<br />" ?>
+    <?php //$sf_user->setCulture('zh_CN') ?> 
+    <?php //echo 'CN'.format_number(12000.10)."<br />" ?>
+    
+    <?php echo input_date_tag('birth_date', mktime(0, 0, 0, 9, 14, 2006)) ?>
+    
     <div id="container" style="width:500px;margin:0 auto;border:1px solid blue;padding:10px">
 
       <div id="navigator" style="display:inline;float:right">

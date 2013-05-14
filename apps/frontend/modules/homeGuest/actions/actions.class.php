@@ -21,6 +21,9 @@ class homeGuestActions extends sfActions
 //     echo $TestParams['class']->price."<br />";
   	//die();
   	
+  	echo $this->getRequestParameter('nickname')."<br />";
+  	echo $this->getRequestParameter('activationcode');
+  	
     $this->card_list = array('VISA'=>'Visa','MAST'=>'Master','AMEX'=>'American Express');
     $this->grade_list = array('GradeOne'=>'一年级','GradeTwo'=>'二年级','GradeThree'=>'三年级');
     return sfView::SUCCESS;
@@ -77,6 +80,10 @@ class homeGuestActions extends sfActions
 //     $student->setName($student_name);
 //     $student->setGrade(1);
 //     $student->save();
+    $teacher = new Teacher();
+    $teacher->setName($student_name);
+    $teacher->setType('math');
+    $teacher->save();
     
     // 修改
     
@@ -88,8 +95,19 @@ class homeGuestActions extends sfActions
     
     foreach ($Students as $student)
     {
-    	echo 'ID: '.$student->getId().' Name: '.$student->getName().' Register Time: '.$student->getCreatedAt()." <br />";
+    	echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
     }
+    
+    $teacher = TeacherPeer::retrieveByPK(1);
+    
+    $student = StudentPeer::retrieveByPK(2);
+    echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
+    $student->setName('im the kingdom32423423');
+//     $student->setTeacherId($teacher->getId());
+    $student->setTeacherId(100);
+    StudentPeer::doUpdate($student);
+    $student = StudentPeer::retrieveByPK(2);
+    echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
     
     // 删除
 //     $Students[0]->delete();

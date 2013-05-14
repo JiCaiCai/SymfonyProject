@@ -8451,3 +8451,1557 @@ May 14 14:48:44 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_tem
 May 14 14:48:44 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
 May 14 14:48:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
 May 14 14:48:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:41:30 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:41:30 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:41:30 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:41:30 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:41:30 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:41:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:41:30 symfony [info] {myUser} Automatic user logout due to timeout
+May 14 15:41:30 symfony [info] {myUser} User is not authenticated
+May 14 15:41:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:41:30 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:41:30 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:41:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:41:30 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:41:30 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 14 15:41:30 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:41:30 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 14 15:41:30 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:41:30 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:41:30 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:41:30 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:41:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:41:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:41:30 symfony [info] {sfWebDebugLogger} Configuration 1.07 ms (10)
+May 14 15:41:30 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.36 ms (1)
+May 14 15:41:30 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 13.63 ms (1)
+May 14 15:41:30 symfony [info] {sfWebResponse} Send content (33958 o)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:41:31 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:41:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:41:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:41:31 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:41:31 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:41:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:41:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest//nickname/royroryas/activationcode/833947 with parameters array (  'royroryas' => 'activationcode',  833947 => true,  'module' => 'homeGuest',  'action' => 'nickname',)
+May 14 15:43:16 symfony [info] {sfFrontWebController} Action "homeGuest/nickname" does not exist
+May 14 15:43:16 symfony [err] {sfError404Exception} Action "homeGuest/nickname" does not exist.
+May 14 15:43:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:16 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:43:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'royroryas' => 'activationcode',  833947 => true,  'module' => 'homeGuest',  'action' => 'nickname',)
+May 14 15:43:22 symfony [info] {sfFrontWebController} Action "homeGuest/nickname" does not exist
+May 14 15:43:22 symfony [err] {sfError404Exception} Action "homeGuest/nickname" does not exist.
+May 14 15:43:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:22 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:22 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:43:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'royroryas' => 'activationcode',  833947 => true,  'module' => 'homeGuest',  'action' => 'nickname',)
+May 14 15:43:26 symfony [info] {sfFrontWebController} Action "homeGuest/nickname" does not exist
+May 14 15:43:26 symfony [err] {sfError404Exception} Action "homeGuest/nickname" does not exist.
+May 14 15:43:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:26 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:43:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'royroryas' => 'activationcode',  833947 => true,  'module' => 'homeGuest',  'action' => 'nickname',)
+May 14 15:43:45 symfony [info] {sfFrontWebController} Action "homeGuest/nickname" does not exist
+May 14 15:43:45 symfony [err] {sfError404Exception} Action "homeGuest/nickname" does not exist.
+May 14 15:43:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:45 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:43:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'royroryas' => 'activationcode',  833947 => true,  'module' => 'homeGuest',  'action' => 'nickname',)
+May 14 15:43:47 symfony [info] {sfFrontWebController} Action "homeGuest/nickname" does not exist
+May 14 15:43:47 symfony [err] {sfError404Exception} Action "homeGuest/nickname" does not exist.
+May 14 15:43:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:43:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/:module/*)
+May 14 15:43:47 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:43:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:43:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:54:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:54:13 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:54:13 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:54:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:54:13 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:54:13 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 14 15:54:13 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:54:13 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 14 15:54:13 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:54:13 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:54:13 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:54:13 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" does not exist
+May 14 15:54:13 symfony [info] {main} Call "homeGuest->executeCurrentDate()"
+May 14 15:54:13 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" does not exist
+May 14 15:54:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/_currentDate.php"
+May 14 15:54:13 symfony [info] {sfViewCacheManager} Save cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a"
+May 14 15:54:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:54:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:54:13 symfony [info] {sfWebDebugLogger} Configuration 67.88 ms (11)
+May 14 15:54:13 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.30 ms (1)
+May 14 15:54:13 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 19.37 ms (1)
+May 14 15:54:13 symfony [info] {sfWebDebugLogger} Component "homeGuest/currentDate" 0.02 ms (1)
+May 14 15:54:13 symfony [info] {sfWebDebugLogger} Partial "homeGuest/_currentDate" 2.83 ms (1)
+May 14 15:54:13 symfony [info] {sfWebResponse} Send content (35789 o)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:54:13 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode)
+May 14 15:54:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:54:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:54:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:54:33 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:54:33 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:54:33 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:54:33 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:54:33 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:54:33 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode)
+May 14 15:54:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /nickname/royroryas/activationcode/833947 with parameters array (  'activationcode' => '833947',  'module' => 'nickname',  'action' => 'royroryas',)
+May 14 15:54:33 symfony [info] {sfFrontWebController} Action "nickname/royroryas" does not exist
+May 14 15:54:33 symfony [err] {sfError404Exception} Action "nickname/royroryas" does not exist.
+May 14 15:54:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:54:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:54:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:54:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:54:34 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:54:34 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:54:34 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:54:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode)
+May 14 15:54:34 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:54:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:54:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Match route "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode) for /nickname/royroryas/activationcode/833947 with parameters array (  'module' => 'homeGuest',  'action' => 'index',  'nickname' => 'royroryas',  'activationcode' => '833947',)
+May 14 15:55:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:55:24 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:55:24 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:55:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:55:24 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:55:24 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 15:55:24 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:55:24 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 15:55:24 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:55:24 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:55:24 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:55:24 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:55:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:55:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:55:24 symfony [info] {sfWebDebugLogger} Configuration 8.77 ms (11)
+May 14 15:55:24 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.35 ms (1)
+May 14 15:55:24 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 13.99 ms (1)
+May 14 15:55:24 symfony [info] {sfWebResponse} Send content (34276 o)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:55:24 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:55:24 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:55:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:55:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:58:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:58:01 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:58:01 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:58:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:58:01 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:58:01 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 15:58:01 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:58:01 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 15:58:01 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:58:01 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:58:01 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:58:01 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:58:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:58:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:58:01 symfony [info] {sfWebDebugLogger} Configuration 8.93 ms (11)
+May 14 15:58:01 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.45 ms (1)
+May 14 15:58:01 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 13.96 ms (1)
+May 14 15:58:01 symfony [info] {sfWebResponse} Send content (34555 o)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_parameter_index" (/nickname/:nickname/activationcode/:activationcode)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:58:01 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:58:01 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:58:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:58:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:58:52 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:58:52 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:58:52 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:58:52 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:58:52 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:58:52 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:58:52 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:58:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:58:52 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:58:52 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:58:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:58:52 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:58:52 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 15:58:52 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:58:52 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 15:58:52 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:58:52 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:58:52 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:58:52 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:58:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:58:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:58:52 symfony [info] {sfWebDebugLogger} Configuration 8.78 ms (11)
+May 14 15:58:52 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.43 ms (1)
+May 14 15:58:52 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 13.84 ms (1)
+May 14 15:58:52 symfony [info] {sfWebResponse} Send content (34227 o)
+May 14 15:58:54 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:58:54 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:58:54 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:58:54 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:58:54 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:58:54 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:58:54 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:58:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:58:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:58:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:58:56 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:58:56 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:58:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:58:56 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" exists
+May 14 15:58:56 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:58:56 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:58:56 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:58:56 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:58:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:58:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:58:56 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 15:58:56 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.32 ms (1)
+May 14 15:58:56 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 10.84 ms (1)
+May 14 15:58:56 symfony [info] {sfWebResponse} Send content (33133 o)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:58:56 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:58:56 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:58:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:58:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:15 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:15 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:15 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:16 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:16 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:16 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:16 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:59:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:59:16 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:59:16 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:59:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:59:16 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:59:16 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 15:59:16 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:59:16 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 15:59:16 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:16 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:16 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:59:16 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:59:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:59:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:16 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 15:59:16 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.43 ms (1)
+May 14 15:59:16 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 13.65 ms (1)
+May 14 15:59:16 symfony [info] {sfWebResponse} Send content (34226 o)
+May 14 15:59:17 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:17 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:17 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:17 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:17 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:17 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:17 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:59:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:59:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:59:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:59:23 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:59:23 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:59:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:59:23 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:59:23 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 15:59:23 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:59:23 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 15:59:23 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:23 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:23 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:59:23 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:59:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:59:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:23 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 15:59:23 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.44 ms (1)
+May 14 15:59:23 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 14.33 ms (1)
+May 14 15:59:23 symfony [info] {sfWebResponse} Send content (34226 o)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:23 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:59:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:59:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:59:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:59:41 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:59:41 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:59:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:59:41 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:59:41 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 15:59:41 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:59:41 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 15:59:41 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:41 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:41 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:59:41 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:59:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:59:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:41 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 15:59:41 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.45 ms (1)
+May 14 15:59:41 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 14.54 ms (1)
+May 14 15:59:41 symfony [info] {sfWebResponse} Send content (34226 o)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:41 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:41 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:59:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:59:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:59:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:59:42 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:59:42 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:59:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:59:42 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" exists
+May 14 15:59:42 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:42 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:42 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:59:42 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:59:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:59:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:42 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (10)
+May 14 15:59:42 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.28 ms (1)
+May 14 15:59:42 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 9.73 ms (1)
+May 14 15:59:42 symfony [info] {sfWebResponse} Send content (33132 o)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:42 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:42 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:59:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:59:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:59:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:59:44 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:59:44 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:59:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:59:44 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" exists
+May 14 15:59:44 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:44 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:44 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:59:44 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:59:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:59:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:44 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 15:59:44 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.28 ms (1)
+May 14 15:59:44 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 9.75 ms (1)
+May 14 15:59:44 symfony [info] {sfWebResponse} Send content (33132 o)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:44 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:44 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:59:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:59:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:59:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:59:46 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:59:46 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:59:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:59:46 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:59:46 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 15:59:46 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:59:46 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 15:59:46 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:46 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:46 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:59:46 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:59:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:59:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:46 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 15:59:46 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.40 ms (1)
+May 14 15:59:46 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 18.34 ms (1)
+May 14 15:59:46 symfony [info] {sfWebResponse} Send content (34226 o)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:46 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:59:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:59:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:48 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:48 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:48 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:48 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:59:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:59:49 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:59:49 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:59:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:59:49 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" exists
+May 14 15:59:49 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:49 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:49 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:59:49 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:59:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:59:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:49 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 15:59:49 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.28 ms (1)
+May 14 15:59:49 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 10.07 ms (1)
+May 14 15:59:49 symfony [info] {sfWebResponse} Send content (33133 o)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:49 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:49 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:59:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:59:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:52 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:52 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:52 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:52 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:52 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:52 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:52 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 15:59:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 15:59:52 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 15:59:52 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 15:59:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 15:59:52 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 15:59:52 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 15:59:52 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 15:59:52 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 15:59:52 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:52 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 15:59:52 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 15:59:52 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 15:59:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 15:59:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 15:59:52 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 15:59:52 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.40 ms (1)
+May 14 15:59:52 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 13.05 ms (1)
+May 14 15:59:52 symfony [info] {sfWebResponse} Send content (34226 o)
+May 14 15:59:53 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 15:59:53 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 15:59:53 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 15:59:53 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 15:59:53 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 15:59:53 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 15:59:53 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 15:59:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 15:59:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:00:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:00:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:00:12 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:00:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:00:12 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:00:12 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:00:12 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:00:12 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:00:12 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:00:12 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:00:12 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:00:12 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:00:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:00:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:00:12 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 16:00:12 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.40 ms (1)
+May 14 16:00:12 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 13.13 ms (1)
+May 14 16:00:12 symfony [info] {sfWebResponse} Send content (34226 o)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:00:12 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:00:12 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:00:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:00:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:15:56 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:15:56 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:15:56 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:15:56 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:15:56 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:15:56 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:15:56 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:15:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:15:56 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:15:56 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:15:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:15:56 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:15:56 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:15:56 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:15:56 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:15:56 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:15:56 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:15:56 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:15:56 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" does not exist
+May 14 16:15:56 symfony [info] {main} Call "homeGuest->executeCurrentDate()"
+May 14 16:15:56 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" does not exist
+May 14 16:15:56 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/_currentDate.php"
+May 14 16:15:56 symfony [info] {sfViewCacheManager} Save cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a"
+May 14 16:15:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:15:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:15:56 symfony [info] {sfWebDebugLogger} Configuration 66.69 ms (11)
+May 14 16:15:56 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.35 ms (1)
+May 14 16:15:56 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 27.76 ms (1)
+May 14 16:15:56 symfony [info] {sfWebDebugLogger} Component "homeGuest/currentDate" 0.02 ms (1)
+May 14 16:15:56 symfony [info] {sfWebDebugLogger} Partial "homeGuest/_currentDate" 2.06 ms (1)
+May 14 16:15:56 symfony [info] {sfWebResponse} Send content (36342 o)
+May 14 16:15:59 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:15:59 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:15:59 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:15:59 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:15:59 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:15:59 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:15:59 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:15:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:15:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:17:00 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:17:00 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:17:00 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:17:00 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:17:00 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:17:00 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:17:00 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:17:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:17:00 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:17:00 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:17:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:17:00 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:17:00 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:17:00 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:17:00 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:17:00 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:17:00 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:17:00 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:17:00 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:17:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:17:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:17:00 symfony [info] {sfWebDebugLogger} Configuration 1.04 ms (10)
+May 14 16:17:00 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.45 ms (1)
+May 14 16:17:00 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 22.52 ms (1)
+May 14 16:17:00 symfony [info] {sfWebResponse} Send content (34320 o)
+May 14 16:17:01 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:17:01 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:17:01 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:17:01 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:17:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:17:01 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:17:01 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:17:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:17:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:17:34 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:17:34 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:17:34 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:17:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:17:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:17:34 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:17:34 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:17:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:17:34 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:17:34 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:17:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:17:34 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:17:34 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:17:34 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:17:34 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:17:34 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:17:34 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:17:34 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:17:34 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:17:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:17:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:17:34 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 16:17:34 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.44 ms (1)
+May 14 16:17:34 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 22.46 ms (1)
+May 14 16:17:34 symfony [info] {sfWebResponse} Send content (34331 o)
+May 14 16:17:36 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:17:36 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:17:36 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:17:36 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:17:36 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:17:36 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:17:36 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:17:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:17:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:17:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:17:55 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:17:55 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:17:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:17:55 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:17:55 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:17:55 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:17:55 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:17:55 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:17:55 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:17:55 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:17:55 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:17:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:17:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:17:55 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 16:17:55 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.40 ms (1)
+May 14 16:17:55 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 21.05 ms (1)
+May 14 16:17:55 symfony [info] {sfWebResponse} Send content (34338 o)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:17:55 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:17:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:17:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:17:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:19:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:19:02 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:19:02 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:19:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:19:02 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:19:02 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:19:02 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:19:02 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:19:02 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:19:02 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:19:02 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:19:02 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:19:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:19:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:19:02 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 16:19:02 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.40 ms (1)
+May 14 16:19:02 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 23.80 ms (1)
+May 14 16:19:02 symfony [info] {sfWebResponse} Send content (34337 o)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:19:02 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:19:03 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:19:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:19:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:20:53 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:20:53 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:20:53 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:20:53 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:20:53 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:20:53 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:20:53 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:20:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:20:53 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:20:53 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:20:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:20:53 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:20:53 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:20:53 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:20:53 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:20:53 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:20:53 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:20:53 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:20:53 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:20:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:20:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:20:53 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 16:20:53 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.45 ms (1)
+May 14 16:20:53 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 25.56 ms (1)
+May 14 16:20:53 symfony [info] {sfWebResponse} Send content (36347 o)
+May 14 16:20:56 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:20:56 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:20:56 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:20:56 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:20:56 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:20:56 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:20:56 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:20:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:20:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:21:30 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:21:30 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:21:30 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:21:30 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:21:30 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:21:30 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:21:30 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:21:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:21:30 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:21:30 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:21:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:21:30 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:21:30 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:21:30 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:21:30 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:21:30 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:21:30 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:21:30 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:21:30 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:21:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:21:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:21:30 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 16:21:30 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.44 ms (1)
+May 14 16:21:30 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 25.58 ms (1)
+May 14 16:21:30 symfony [info] {sfWebResponse} Send content (36327 o)
+May 14 16:21:33 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:21:33 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:21:33 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:21:33 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:21:33 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:21:33 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:21:33 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:21:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:21:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:43:29 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:43:29 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:43:29 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:43:29 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:43:29 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:43:29 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:43:29 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:43:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:43:29 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:43:29 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:43:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:43:29 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:43:29 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:43:29 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:43:29 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:43:29 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:43:29 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:43:29 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:43:29 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:43:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:43:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:43:29 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 16:43:29 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.45 ms (1)
+May 14 16:43:29 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 22.83 ms (1)
+May 14 16:43:29 symfony [info] {sfWebResponse} Send content (36328 o)
+May 14 16:43:31 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:43:31 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:43:31 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:43:31 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:43:31 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:43:31 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:43:31 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:43:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:43:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:46:52 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:46:52 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:46:52 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:46:52 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:46:52 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:46:52 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:46:52 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/nickname/royroryas/activationcode/833947 with parameters array (  'nickname' => 'royroryas',  'activationcode' => '833947',  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:46:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:46:52 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:46:52 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:46:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:46:52 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:46:52 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index?activationcode=833947&nickname=royroryas" does not exist
+May 14 16:46:52 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:46:52 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index?activationcode=833947&nickname=royroryas"
+May 14 16:46:52 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:46:52 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:46:52 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:46:52 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:46:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:46:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:46:52 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 16:46:52 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.45 ms (1)
+May 14 16:46:52 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 22.68 ms (1)
+May 14 16:46:52 symfony [info] {sfWebResponse} Send content (36328 o)
+May 14 16:46:54 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:46:54 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:46:54 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:46:54 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:46:54 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:46:54 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:46:54 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:46:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:46:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:48:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:48:04 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:48:04 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:48:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:48:04 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:48:04 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 14 16:48:04 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:48:04 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 14 16:48:04 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:04 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:04 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:48:04 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:48:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:48:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:04 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 16:48:04 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.27 ms (1)
+May 14 16:48:04 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 22.15 ms (1)
+May 14 16:48:04 symfony [info] {sfWebResponse} Send content (35823 o)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:04 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:04 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:48:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:48:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/SaveData with parameters array (  'SaveData' => true,  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:48:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:48:09 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:48:09 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:48:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:48:09 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:48:09 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:48:09 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:09 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:09 symfony [info] {main} Call "homeGuest->executeCurrentDate()"
+May 14 16:48:09 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/_currentDate.php"
+May 14 16:48:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:48:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:09 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (10)
+May 14 16:48:09 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.16 ms (1)
+May 14 16:48:09 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 19.48 ms (1)
+May 14 16:48:09 symfony [info] {sfWebDebugLogger} Component "homeGuest/currentDate" 0.02 ms (1)
+May 14 16:48:09 symfony [info] {sfWebDebugLogger} Partial "homeGuest/_currentDate" 0.27 ms (1)
+May 14 16:48:09 symfony [info] {sfWebResponse} Send content (33953 o)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:09 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:48:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:48:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/SaveData with parameters array (  'SaveData' => true,  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:48:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:48:22 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:48:22 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:48:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:48:22 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:48:22 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:48:22 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:22 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:22 symfony [info] {main} Call "homeGuest->executeCurrentDate()"
+May 14 16:48:22 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/_currentDate.php"
+May 14 16:48:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:48:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:22 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 16:48:22 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.16 ms (1)
+May 14 16:48:22 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 19.33 ms (1)
+May 14 16:48:22 symfony [info] {sfWebDebugLogger} Component "homeGuest/currentDate" 0.02 ms (1)
+May 14 16:48:22 symfony [info] {sfWebDebugLogger} Partial "homeGuest/_currentDate" 0.26 ms (1)
+May 14 16:48:22 symfony [info] {sfWebResponse} Send content (33990 o)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:22 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:22 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:48:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:48:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:48:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:48:51 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:48:51 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:48:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:48:51 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:48:51 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 14 16:48:51 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:48:51 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 14 16:48:51 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:51 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:51 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:48:51 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:48:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:48:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:51 symfony [info] {sfWebDebugLogger} Configuration 27.98 ms (11)
+May 14 16:48:51 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.35 ms (1)
+May 14 16:48:51 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 21.71 ms (1)
+May 14 16:48:51 symfony [info] {sfWebResponse} Send content (35788 o)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:51 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:48:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:48:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/SaveData with parameters array (  'SaveData' => true,  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:48:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:48:54 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:48:54 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:48:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:48:54 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:48:54 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:48:54 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:54 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:48:54 symfony [info] {main} Call "homeGuest->executeCurrentDate()"
+May 14 16:48:54 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/_currentDate.php"
+May 14 16:48:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:48:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:48:54 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 16:48:54 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.16 ms (1)
+May 14 16:48:54 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 19.39 ms (1)
+May 14 16:48:54 symfony [info] {sfWebDebugLogger} Component "homeGuest/currentDate" 0.02 ms (1)
+May 14 16:48:54 symfony [info] {sfWebDebugLogger} Partial "homeGuest/_currentDate" 0.26 ms (1)
+May 14 16:48:54 symfony [info] {sfWebResponse} Send content (33969 o)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:48:54 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:48:54 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:48:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:48:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:49:10 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:49:10 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:49:10 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:49:10 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:49:10 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:49:10 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:49:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:49:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:49:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:49:12 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:49:12 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:49:12 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:49:12 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:49:12 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:49:12 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:49:12 symfony [info] {sfPatternRouting} Match route "parameter_default_index" (/:module/*) for /homeGuest/SaveData with parameters array (  'SaveData' => true,  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:49:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:49:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:49:12 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:49:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:49:12 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:49:12 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:49:12 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:49:12 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:49:12 symfony [info] {main} Call "homeGuest->executeCurrentDate()"
+May 14 16:49:12 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/_currentDate.php"
+May 14 16:49:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:49:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:49:12 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 16:49:12 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.16 ms (1)
+May 14 16:49:12 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 20.53 ms (1)
+May 14 16:49:12 symfony [info] {sfWebDebugLogger} Component "homeGuest/currentDate" 0.02 ms (1)
+May 14 16:49:12 symfony [info] {sfWebDebugLogger} Partial "homeGuest/_currentDate" 0.26 ms (1)
+May 14 16:49:12 symfony [info] {sfWebResponse} Send content (33979 o)
+May 14 16:49:13 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:49:13 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:49:13 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:49:13 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:49:13 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:49:13 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:49:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:49:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:49:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:49:59 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:49:59 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:49:59 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:49:59 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:49:59 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:49:59 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:49:59 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:49:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:49:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 14 16:50:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:50:01 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:50:01 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:50:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:50:01 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 14 16:50:01 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 14 16:50:01 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 14 16:50:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:50:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:50:01 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (8)
+May 14 16:50:01 symfony [info] {sfWebDebugLogger} Action "homeGuest/SaveData" 14.96 ms (1)
+May 14 16:50:01 symfony [info] {sfWebDebugLogger} View "None" for "homeGuest/SaveData" 0.00 ms (1)
+May 14 16:50:01 symfony [info] {sfWebResponse} Send content (23197 o)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:50:01 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:50:01 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:50:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:50:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:51:53 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:51:53 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:51:53 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:51:53 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:51:53 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:51:53 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:51:53 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:51:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:51:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 14 16:51:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:51:55 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:51:55 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:51:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:51:55 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 14 16:51:55 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 14 16:51:55 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 14 16:51:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:51:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:51:55 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (8)
+May 14 16:51:55 symfony [info] {sfWebDebugLogger} Action "homeGuest/SaveData" 10.87 ms (1)
+May 14 16:51:55 symfony [info] {sfWebDebugLogger} View "None" for "homeGuest/SaveData" 0.00 ms (1)
+May 14 16:51:55 symfony [info] {sfWebResponse} Send content (23197 o)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:51:55 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:51:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:51:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:51:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:52:29 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:52:29 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:52:29 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:52:29 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:52:29 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:52:29 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:52:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:52:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:52:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:52:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:52:31 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:52:31 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:52:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:52:31 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:52:31 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 14 16:52:31 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:52:31 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 14 16:52:31 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:52:31 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:52:31 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:52:31 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:52:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:52:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:52:31 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 14 16:52:31 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.35 ms (1)
+May 14 16:52:31 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 21.94 ms (1)
+May 14 16:52:31 symfony [info] {sfWebResponse} Send content (35818 o)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:52:31 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:52:31 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:52:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:52:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 14 16:52:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:52:34 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:52:34 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:52:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:52:34 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 14 16:52:34 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 14 16:52:34 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 14 16:52:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:52:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:52:34 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (8)
+May 14 16:52:34 symfony [info] {sfWebDebugLogger} Action "homeGuest/SaveData" 10.82 ms (1)
+May 14 16:52:34 symfony [info] {sfWebDebugLogger} View "None" for "homeGuest/SaveData" 0.00 ms (1)
+May 14 16:52:34 symfony [info] {sfWebResponse} Send content (23193 o)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:52:34 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:52:34 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:52:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:52:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:56:08 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:56:08 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:56:08 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:56:08 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:56:08 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:56:08 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:56:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:56:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:56:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 14 16:56:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:56:09 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:56:09 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:56:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:56:09 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 14 16:56:09 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 14 16:56:09 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 14 16:56:09 symfony [debug] {sfPropelLogger} prepare: UPDATE student SET `NAME`=:p1 WHERE student.ID=:p2
+May 14 16:56:09 symfony [debug] {sfPropelLogger} Binding 'im the king' at position :p1 w/ PDO type PDO::PARAM_STR
+May 14 16:56:09 symfony [debug] {sfPropelLogger} Binding 2 at position :p2 w/ PDO type PDO::PARAM_INT
+May 14 16:56:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:56:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:56:09 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (8)
+May 14 16:56:09 symfony [info] {sfWebDebugLogger} Action "homeGuest/SaveData" 56.42 ms (1)
+May 14 16:56:09 symfony [info] {sfWebDebugLogger} View "None" for "homeGuest/SaveData" 0.01 ms (1)
+May 14 16:56:09 symfony [info] {sfWebResponse} Send content (23271 o)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:56:09 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:56:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:56:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:56:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 14 16:56:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 16:56:26 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 16:56:26 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 16:56:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 16:56:26 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 14 16:56:26 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 14 16:56:26 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 14 16:56:26 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 14 16:56:26 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:56:26 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 14 16:56:26 symfony [info] {sfViewCacheManager} Generate cache key
+May 14 16:56:26 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 14 16:56:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 16:56:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 16:56:26 symfony [info] {sfWebDebugLogger} Configuration 1.04 ms (10)
+May 14 16:56:26 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.38 ms (1)
+May 14 16:56:26 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 22.75 ms (1)
+May 14 16:56:26 symfony [info] {sfWebResponse} Send content (35823 o)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 16:56:26 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 16:56:26 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 16:56:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 16:56:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:04:16 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:04:16 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:04:16 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:04:16 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:04:16 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:04:16 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:04:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 17:04:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 17:04:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 14 17:04:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 17:04:21 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 17:04:21 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 17:04:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 17:04:21 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 14 17:04:21 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 14 17:04:21 symfony [debug] {sfPropelLogger} prepare: INSERT INTO teacher (`ID`,`NAME`,`TYPE`,`CREATED_AT`) VALUES (:p1,:p2,:p3,:p4)
+May 14 17:04:21 symfony [debug] {sfPropelLogger} Binding NULL at position :p1 w/ PDO type PDO::PARAM_NULL
+May 14 17:04:21 symfony [debug] {sfPropelLogger} Binding 'alice' at position :p2 w/ PDO type PDO::PARAM_STR
+May 14 17:04:21 symfony [debug] {sfPropelLogger} Binding 'math' at position :p3 w/ PDO type PDO::PARAM_STR
+May 14 17:04:21 symfony [debug] {sfPropelLogger} Binding '2013-05-14 17:04:21' at position :p4 w/ PDO type PDO::PARAM_STR
+May 14 17:04:21 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:04:21 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:04:21 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 17:04:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 17:04:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:05:33 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:05:33 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:05:33 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:05:33 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:05:33 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:05:33 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:05:33 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 17:05:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 17:05:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 14 17:05:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 17:05:40 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 17:05:40 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 17:05:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 17:05:40 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 14 17:05:40 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 14 17:05:40 symfony [debug] {sfPropelLogger} prepare: INSERT INTO teacher (`ID`,`NAME`,`TYPE`,`CREATED_AT`) VALUES (:p1,:p2,:p3,:p4)
+May 14 17:05:40 symfony [debug] {sfPropelLogger} Binding NULL at position :p1 w/ PDO type PDO::PARAM_NULL
+May 14 17:05:40 symfony [debug] {sfPropelLogger} Binding 'klias' at position :p2 w/ PDO type PDO::PARAM_STR
+May 14 17:05:40 symfony [debug] {sfPropelLogger} Binding 'math' at position :p3 w/ PDO type PDO::PARAM_STR
+May 14 17:05:40 symfony [debug] {sfPropelLogger} Binding '2013-05-14 17:05:40' at position :p4 w/ PDO type PDO::PARAM_STR
+May 14 17:05:40 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 14 17:05:40 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` WHERE teacher.ID=:p1
+May 14 17:05:40 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:05:40 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:05:40 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 17:05:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 17:05:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:06:14 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:06:14 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:06:14 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:06:14 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:06:14 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:06:14 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:06:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 17:06:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 17:06:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:06:25 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:06:25 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:06:25 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:06:25 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:06:25 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:06:25 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:06:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 14 17:06:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 17:06:25 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 17:06:25 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 17:06:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 17:06:25 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 14 17:06:25 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 14 17:06:25 symfony [debug] {sfPropelLogger} prepare: INSERT INTO teacher (`ID`,`NAME`,`TYPE`,`CREATED_AT`) VALUES (:p1,:p2,:p3,:p4)
+May 14 17:06:25 symfony [debug] {sfPropelLogger} Binding NULL at position :p1 w/ PDO type PDO::PARAM_NULL
+May 14 17:06:25 symfony [debug] {sfPropelLogger} Binding 'dnoasd' at position :p2 w/ PDO type PDO::PARAM_STR
+May 14 17:06:25 symfony [debug] {sfPropelLogger} Binding 'math' at position :p3 w/ PDO type PDO::PARAM_STR
+May 14 17:06:25 symfony [debug] {sfPropelLogger} Binding '2013-05-14 17:06:25' at position :p4 w/ PDO type PDO::PARAM_STR
+May 14 17:06:25 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 14 17:06:25 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` WHERE teacher.ID=:p1
+May 14 17:06:25 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 14 17:06:25 symfony [debug] {sfPropelLogger} prepare: UPDATE student SET `NAME`=:p1, `TEACHER_ID`=:p2 WHERE student.ID=:p3
+May 14 17:06:25 symfony [debug] {sfPropelLogger} Binding 'im the kingdom' at position :p1 w/ PDO type PDO::PARAM_STR
+May 14 17:06:25 symfony [debug] {sfPropelLogger} Binding 1 at position :p2 w/ PDO type PDO::PARAM_INT
+May 14 17:06:25 symfony [debug] {sfPropelLogger} Binding 2 at position :p3 w/ PDO type PDO::PARAM_INT
+May 14 17:06:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 14 17:06:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:06:25 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (8)
+May 14 17:06:25 symfony [info] {sfWebDebugLogger} Action "homeGuest/SaveData" 32.25 ms (1)
+May 14 17:06:25 symfony [info] {sfWebDebugLogger} View "None" for "homeGuest/SaveData" 0.00 ms (1)
+May 14 17:06:25 symfony [info] {sfWebResponse} Send content (23528 o)
+May 14 17:06:26 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:06:26 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:06:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:06:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:06:26 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:06:26 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:06:26 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 17:06:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 17:06:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:07:08 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:07:08 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:07:08 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:07:08 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:07:08 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:07:08 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:07:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 17:07:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 17:07:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 14 17:07:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 14 17:07:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 14 17:07:12 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 14 17:07:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 14 17:07:12 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 14 17:07:12 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 14 17:07:12 symfony [debug] {sfPropelLogger} prepare: INSERT INTO teacher (`ID`,`NAME`,`TYPE`,`CREATED_AT`) VALUES (:p1,:p2,:p3,:p4)
+May 14 17:07:12 symfony [debug] {sfPropelLogger} Binding NULL at position :p1 w/ PDO type PDO::PARAM_NULL
+May 14 17:07:12 symfony [debug] {sfPropelLogger} Binding 'qwerry' at position :p2 w/ PDO type PDO::PARAM_STR
+May 14 17:07:12 symfony [debug] {sfPropelLogger} Binding 'math' at position :p3 w/ PDO type PDO::PARAM_STR
+May 14 17:07:12 symfony [debug] {sfPropelLogger} Binding '2013-05-14 17:07:12' at position :p4 w/ PDO type PDO::PARAM_STR
+May 14 17:07:12 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 14 17:07:12 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` WHERE teacher.ID=:p1
+May 14 17:07:12 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 14 17:07:12 symfony [debug] {sfPropelLogger} prepare: UPDATE student SET `NAME`=:p1, `TEACHER_ID`=:p2 WHERE student.ID=:p3
+May 14 17:07:12 symfony [debug] {sfPropelLogger} Binding 'im the kingdom32423423' at position :p1 w/ PDO type PDO::PARAM_STR
+May 14 17:07:12 symfony [debug] {sfPropelLogger} Binding 100 at position :p2 w/ PDO type PDO::PARAM_INT
+May 14 17:07:12 symfony [debug] {sfPropelLogger} Binding 2 at position :p3 w/ PDO type PDO::PARAM_INT
+May 14 17:07:12 symfony [err] {sfPropelLogger} SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`school`.`student`, CONSTRAINT `student_FK_1` FOREIGN KEY (`teacher_id`) REFERENCES `teacher` (`id`))
+May 14 17:07:12 symfony [err] {PropelException} Unable to execute UPDATE statement. [wrapped: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`school`.`student`, CONSTRAINT `student_FK_1` FOREIGN KEY (`teacher_id`) REFERENCES `teacher` (`id`))]
+May 14 17:07:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 14 17:07:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 14 17:07:12 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 14 17:07:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 14 17:07:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
