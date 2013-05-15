@@ -10005,3 +10005,145 @@ May 14 17:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_def
 May 14 17:07:12 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
 May 14 17:07:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
 May 14 17:07:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 10:20:28 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 15 10:20:28 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 15 10:20:28 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 10:20:28 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 10:20:28 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 10:20:28 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 15 10:20:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 15 10:20:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 10:20:28 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 15 10:20:28 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 10:20:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 10:20:28 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 15 10:20:28 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 15 10:20:28 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 15 10:20:29 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 15 10:20:29 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 15 10:20:29 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 15 10:20:29 symfony [info] {sfViewCacheManager} Generate cache key
+May 15 10:20:29 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 15 10:20:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 10:20:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 10:20:29 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (10)
+May 15 10:20:29 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 30.68 ms (1)
+May 15 10:20:29 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 74.23 ms (1)
+May 15 10:20:29 symfony [info] {sfWebResponse} Send content (35573 o)
+May 15 10:20:29 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 15 10:20:29 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 15 10:20:29 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 10:20:29 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 10:20:29 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 10:20:29 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 15 10:20:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/favicon.ico" (/).
+May 15 10:20:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 15 10:20:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 10:24:03 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 15 10:24:03 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 15 10:24:03 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 10:24:03 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 10:24:03 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 10:24:03 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 15 10:24:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 15 10:24:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 10:24:03 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 15 10:24:03 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 10:24:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 10:24:03 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 15 10:24:03 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 15 10:24:03 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 15 10:24:03 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 15 10:24:03 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 15 10:24:03 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 15 10:24:03 symfony [info] {sfViewCacheManager} Generate cache key
+May 15 10:24:03 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 15 10:24:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 10:24:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 10:24:03 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (10)
+May 15 10:24:03 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.34 ms (1)
+May 15 10:24:03 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 20.53 ms (1)
+May 15 10:24:03 symfony [info] {sfWebResponse} Send content (35856 o)
+May 15 10:24:09 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 15 10:24:09 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 15 10:24:09 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 10:24:09 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 10:24:09 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 10:24:09 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 15 10:24:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 15 10:24:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 10:24:09 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 15 10:24:09 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 10:24:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 10:24:09 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 15 10:24:09 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 10:24:09 symfony [debug] {sfPropelLogger} prepare: INSERT INTO teacher (`ID`,`NAME`,`TYPE`,`CREATED_AT`) VALUES (:p1,:p2,:p3,:p4)
+May 15 10:24:09 symfony [debug] {sfPropelLogger} Binding NULL at position :p1 w/ PDO type PDO::PARAM_NULL
+May 15 10:24:09 symfony [debug] {sfPropelLogger} Binding 'hello' at position :p2 w/ PDO type PDO::PARAM_STR
+May 15 10:24:09 symfony [debug] {sfPropelLogger} Binding 'math' at position :p3 w/ PDO type PDO::PARAM_STR
+May 15 10:24:09 symfony [debug] {sfPropelLogger} Binding '2013-05-15 10:24:09' at position :p4 w/ PDO type PDO::PARAM_STR
+May 15 10:24:09 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 15 10:24:09 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` WHERE teacher.ID=:p1
+May 15 10:24:09 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 10:24:09 symfony [debug] {sfPropelLogger} prepare: UPDATE student SE WHERE student.ID=:p1
+May 15 10:24:09 symfony [debug] {sfPropelLogger} Binding 2 at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 10:24:09 symfony [err] {sfPropelLogger} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE student.ID=2' at line 1
+May 15 10:24:09 symfony [err] {PropelException} Unable to execute UPDATE statement. [wrapped: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE student.ID=2' at line 1]
+May 15 10:24:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 15 10:24:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 10:27:52 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 15 10:27:52 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 15 10:27:52 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 10:27:52 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 10:27:52 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 10:27:52 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 15 10:27:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /homeGuest/SaveData with parameters array (  'module' => 'homeGuest',  'action' => 'SaveData',)
+May 15 10:27:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 10:27:52 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 15 10:27:52 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 10:27:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 10:27:52 symfony [info] {homeGuestActions} Call "homeGuestActions->executeSaveData()"
+May 15 10:27:52 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 10:27:52 symfony [debug] {sfPropelLogger} prepare: INSERT INTO teacher (`ID`,`NAME`,`TYPE`,`CREATED_AT`) VALUES (:p1,:p2,:p3,:p4)
+May 15 10:27:52 symfony [debug] {sfPropelLogger} Binding NULL at position :p1 w/ PDO type PDO::PARAM_NULL
+May 15 10:27:52 symfony [debug] {sfPropelLogger} Binding 'helloworld' at position :p2 w/ PDO type PDO::PARAM_STR
+May 15 10:27:52 symfony [debug] {sfPropelLogger} Binding 'physics' at position :p3 w/ PDO type PDO::PARAM_STR
+May 15 10:27:52 symfony [debug] {sfPropelLogger} Binding '2013-05-15 10:27:52' at position :p4 w/ PDO type PDO::PARAM_STR
+May 15 10:27:52 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` ORDER BY student.CREATED_AT DESC LIMIT 5
+May 15 10:27:52 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` WHERE teacher.ID=:p1
+May 15 10:27:52 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 10:27:52 symfony [debug] {sfPropelLogger} prepare: UPDATE student SET `NAME`=:p1, `TEACHER_ID`=:p2 WHERE student.ID=:p3
+May 15 10:27:52 symfony [debug] {sfPropelLogger} Binding 'Swift' at position :p1 w/ PDO type PDO::PARAM_STR
+May 15 10:27:52 symfony [debug] {sfPropelLogger} Binding 1 at position :p2 w/ PDO type PDO::PARAM_INT
+May 15 10:27:52 symfony [debug] {sfPropelLogger} Binding 1 at position :p3 w/ PDO type PDO::PARAM_INT
+May 15 10:27:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 10:27:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 10:27:52 symfony [info] {sfWebDebugLogger} Configuration 0.77 ms (8)
+May 15 10:27:52 symfony [info] {sfWebDebugLogger} Action "homeGuest/SaveData" 32.61 ms (1)
+May 15 10:27:52 symfony [info] {sfWebDebugLogger} View "None" for "homeGuest/SaveData" 0.01 ms (1)
+May 15 10:27:52 symfony [info] {sfWebResponse} Send content (23524 o)
+May 15 10:34:45 symfony [info] {sfPatternRouting} Connect sfRoute "homeGuest" (/homeGuest/index)
+May 15 10:34:45 symfony [info] {sfPatternRouting} Connect sfRoute "action_to_template" (/homeGuest/actiontotem)
+May 15 10:34:45 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 10:34:45 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 10:34:45 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 10:34:45 symfony [info] {sfPatternRouting} Connect sfRoute "parameter_default_index" (/:module/*)
+May 15 10:34:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'homeGuest',  'action' => 'index',)
+May 15 10:34:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 10:34:45 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+May 15 10:34:45 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 10:34:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 10:34:45 symfony [info] {homeGuestActions} Call "homeGuestActions->executeIndex()"
+May 15 10:34:45 symfony [info] {sfViewCacheManager} Cache for "homeGuest/index" does not exist
+May 15 10:34:45 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/modules/homeGuest/templates/indexSuccess.php"
+May 15 10:34:45 symfony [info] {sfViewCacheManager} Save cache for "homeGuest/index"
+May 15 10:34:45 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 15 10:34:45 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php"
+May 15 10:34:45 symfony [info] {sfViewCacheManager} Generate cache key
+May 15 10:34:45 symfony [info] {sfViewCacheManager} Cache for "@sf_cache_partial?module=homeGuest&action=_currentDate&sf_cache_key=40cd750bba9870f18aada2478b24840a" exists
+May 15 10:34:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 10:34:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 10:34:45 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (10)
+May 15 10:34:45 symfony [info] {sfWebDebugLogger} Action "homeGuest/index" 0.36 ms (1)
+May 15 10:34:45 symfony [info] {sfWebDebugLogger} View "Success" for "homeGuest/index" 13.30 ms (1)
+May 15 10:34:45 symfony [info] {sfWebResponse} Send content (34041 o)

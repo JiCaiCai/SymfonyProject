@@ -1,6 +1,11 @@
 <?php
 class homeGuestActions extends sfActions
 {
+  /**
+   * 默认动作
+   * @param unknown $request
+   * @return string
+   */
   public function executeIndex($request)
   {
     // First go to this web, user is a guest
@@ -29,10 +34,21 @@ class homeGuestActions extends sfActions
     return sfView::SUCCESS;
   }
 
+  /**
+   * 登陆
+   * @param unknown $request
+   * @return string
+   */
   public function executeLogin($request)
   {
     $this->UserName =  $this->getRequestParameter('username');
     $this->password =  $this->getRequestParameter('password');
+    
+    // 查询数据库
+    $c = new Criteria();
+    $c->setLimit(5);
+    $Students = StudentPeer::doSelectOne($c);
+    
     if ($this->UserName==='roy' && $this->password==='10093633')
     {
       $this->getUser()->setAuthenticated(true);
@@ -43,13 +59,21 @@ class homeGuestActions extends sfActions
     } 
   }
 
-
+  /**
+   * 注销
+   * @param unknown $request
+   */
   public function executeLogout($request)
   {
     $this->getUser()->setAuthenticated(false);
     $this->redirect('@homepage');
   }
 
+  /**
+   * 变量测试
+   * @param unknown $request
+   * @return string
+   */
   public function executeActiontotem($request)
   {
     $this->content = 'may force with you!';
@@ -70,6 +94,9 @@ class homeGuestActions extends sfActions
     $this->pay_type = $this->getRequestParameter('pay_type');
   }
 
+  /**
+   * 数据库测试
+   */
   public function executeSaveData()
   {
     $student_name = $this->getRequestParameter('student_name');
@@ -82,7 +109,7 @@ class homeGuestActions extends sfActions
 //     $student->save();
     $teacher = new Teacher();
     $teacher->setName($student_name);
-    $teacher->setType('math');
+    $teacher->setType('physics');
     $teacher->save();
     
     // 修改
@@ -98,21 +125,38 @@ class homeGuestActions extends sfActions
     	echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
     }
     
-    $teacher = TeacherPeer::retrieveByPK(1);
+    $id = 1;
     
-    $student = StudentPeer::retrieveByPK(2);
+    $teacher = TeacherPeer::retrieveByPK($id);
+    $student = StudentPeer::retrieveByPK($id);
+    
     echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
-    $student->setName('im the kingdom32423423');
-//     $student->setTeacherId($teacher->getId());
+    $student->setName('Swift');
     $student->setTeacherId($teacher->getId());
     StudentPeer::doUpdate($student);
-    $student = StudentPeer::retrieveByPK(2);
+    $student = StudentPeer::retrieveByPK($id);
     echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
     
     // 删除
 //     $Students[0]->delete();
     
     return $this->renderText("<html><body>  Database operation success !</body></html>");
+  }
+  
+  /**
+   * Ajax测试
+   */
+  public function executeAjaxTest()
+  {
+  	return $this->renderText("<strong>This is modified by Ajax! Time: ".date('Y-m-d H:i:s')."</ strong>");
+  }
+  
+  /**
+   * Ajax表单验证测试
+   */
+  public function executeValidUsername()
+  {
+  	return $this->renderText("<strong>This is modified by Ajax! Time: ".date('Y-m-d H:i:s')."</ strong>");
   }
 }
 
