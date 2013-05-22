@@ -15,18 +15,21 @@
       <?php echo Button_to_function('Lucky!', update_element_function("indicator", array(
           "position" => "before",
 	      "content" => "<strong>Cake </strong>"))) ?>
-      <div id="indicator">Data processing beginning</div> 
-      <?php echo javascript_tag(
-	   update_element_function("indicator", array(
-          "position" => "after",
-	      "content" => "<strong>update_element_function</strong>"))
-	   );
+      <div id="indicator" style="display: none;">Data processing beginning</div> 
+      <?php 
+//        echo javascript_tag(
+// 	   update_element_function("indicator", array(
+//           "position" => "after",
+// 	      "content" => "<strong>update_element_function</strong>"))
+// 	   );
       ?>
       <hr />
       <div id="ajax_zone"><strong>I'm the origin!</strong></div> 
       <?php echo Button_to_function('AjaxTest!', remote_function(array(
 	      'update' => 'ajax_zone' ,
 	      'url' => 'homeGuest/AjaxTest',
+      	  'loading' => visual_effect('BlindDown', 'indicator'),
+      	  //'complete' => visual_effect('fade', 'indicator').visual_effect('highlight', 'indicator')
 	       ))); ?>
     </div>
     
@@ -44,7 +47,8 @@
           <?php 
              echo observe_field('username', array(
 			  'update' => 'username_warnning',
-			  'url' => 'null', )) ;
+			  'url' => 'homeGuest/ValidUsername',
+              'with' => "'username='+$(username).getValue()")) ;
           ?>
           <br />
           <?php echo label_for('password','Password: '); ?>

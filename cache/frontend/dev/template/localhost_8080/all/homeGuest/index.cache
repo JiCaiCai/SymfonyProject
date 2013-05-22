@@ -1,21 +1,30 @@
-001368585290001368585285a:3:{s:7:"content";s:2103:"                
+001369211432001369211427a:3:{s:7:"content";s:2969:"                
      
          
          
         
         
-    <div id="javascript_test" style="width:500px;margin:0 auto;border:1px solid yellow;padding:10px">
-      <a href="#" onclick="alert('foobar'); return false;">Click me!</a>    </div>>
+    <div id="javascript_test" style="width:500px;margin:20 auto;border:1px solid green;padding:10px">
+      <input onclick="$('indicator').insert({'before':'&lt;strong&gt;Cake &lt;/strong&gt;'});
+; return false;" type="button" value="Lucky!" />      <div id="indicator" style="display: none;">Data processing beginning</div> 
+            <hr />
+      <div id="ajax_zone"><strong>I'm the origin!</strong></div> 
+      <input onclick="new Ajax.Updater('ajax_zone', '/frontend_dev.php/homeGuest/AjaxTest', {asynchronous:true, evalScripts:false, onLoading:function(request, json){new Effect.BlindDown('indicator', {});}});; return false;" type="button" value="AjaxTest!" />    </div>
     
-    <div id="container" style="width:500px;margin:0 auto;border:1px solid blue;padding:10px">
+    <div id="container" style="width:500px;margin:20 auto;border:1px solid blue;padding:10px">
 
       <div id="navigator" style="display:inline;float:right">
               </div>
 
       <div id="navigator" style="display:inline;float:right">
-        <form method="post" action="/frontend_dev.php/homeGuest/login">        <label for="username">UserName: </label>        <input type="text" name="username" id="username" value="" />        <br />
-        <label for="password">Password: </label>        <input type="password" name="password" id="password" value="" />        <br />
-        <input type="submit" name="commit" value="Login" />       </form>
+        <form method="post" action="/frontend_dev.php/homeGuest/login">          <label for="username">UserName: </label>          <input type="text" name="username" id="username" value="" />          <div id="username_warnning"></div>
+          <script type="text/javascript">
+//<![CDATA[
+new Form.Element.EventObserver("username", function(element, value) {new Ajax.Updater('username_warnning', '/frontend_dev.php/homeGuest/ValidUsername', {asynchronous:true, evalScripts:false, parameters:'username='+$(username).getValue()});});
+//]]>
+</script>          <br />
+          <label for="password">Password: </label>          <input type="password" name="password" id="password" value="" />          <br />
+          <input type="submit" name="commit" value="Login" />       </form>
       </div>
 
 
@@ -41,4 +50,4 @@
 <option value="GradeThree">三年级</option>
 </select>        <input type="submit" name="commit" value="Save" />      </form>
     </div>
-";s:17:"decoratorTemplate";s:82:"/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php";s:8:"response";C:13:"sfWebResponse":547:{a:12:{i:0;s:0:"";i:1;i:200;i:2;s:2:"OK";i:3;a:5:{s:13:"http_protocol";s:8:"HTTP/1.1";s:7:"logging";s:1:"1";s:7:"charset";s:5:"utf-8";s:17:"send_http_headers";b:1;s:12:"content_type";s:24:"text/html; charset=utf-8";}i:4;a:0:{}i:5;b:0;i:6;a:1:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";}i:7;a:1:{s:5:"title";s:10:"Roy Studio";}i:8;a:1:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";}i:9;a:3:{s:5:"first";a:0:{}s:0:"";a:1:{s:8:"main.css";a:0:{}}s:4:"last";a:0:{}}i:10;a:3:{s:5:"first";a:0:{}s:0:"";a:0:{}s:4:"last";a:0:{}}i:11;a:0:{}}}}
+";s:17:"decoratorTemplate";s:82:"/Library/WebServer/Documents/roy/sfproject/test/apps/frontend/templates/layout.php";s:8:"response";C:13:"sfWebResponse":684:{a:12:{i:0;s:0:"";i:1;i:200;i:2;s:2:"OK";i:3;a:5:{s:13:"http_protocol";s:8:"HTTP/1.1";s:7:"logging";s:1:"1";s:7:"charset";s:5:"utf-8";s:17:"send_http_headers";b:1;s:12:"content_type";s:24:"text/html; charset=utf-8";}i:4;a:0:{}i:5;b:0;i:6;a:1:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";}i:7;a:1:{s:5:"title";s:10:"Roy Studio";}i:8;a:1:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";}i:9;a:3:{s:5:"first";a:0:{}s:0:"";a:1:{s:8:"main.css";a:0:{}}s:4:"last";a:0:{}}i:10;a:3:{s:5:"first";a:0:{}s:0:"";a:3:{s:33:"/sfProtoculousPlugin/js/prototype";a:0:{}s:31:"/sfProtoculousPlugin/js/builder";a:0:{}s:31:"/sfProtoculousPlugin/js/effects";a:0:{}}s:4:"last";a:0:{}}i:11;a:0:{}}}}

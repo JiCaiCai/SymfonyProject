@@ -1,0 +1,871 @@
+May 15 15:52:41 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 15:52:41 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 15:52:41 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 15:52:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /article with parameters array (  'module' => 'article',  'action' => 'index',)
+May 15 15:52:41 symfony [info] {sfFrontWebController} Action "article/index" does not exist
+May 15 15:52:41 symfony [err] {sfError404Exception} Action "article/index" does not exist.
+May 15 15:52:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 15 15:52:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 15:53:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 15:53:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 15:53:47 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 15:53:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /student with parameters array (  'module' => 'student',  'action' => 'index',)
+May 15 15:53:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 15:53:47 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 15:53:47 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 15:53:47 symfony [info] {studentActions} Call "studentActions->executeIndex()"
+May 15 15:53:47 symfony [info] {studentActions} Forward to action "student/list"
+May 15 15:53:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 15:53:47 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 15:53:47 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 15:53:47 symfony [info] {studentActions} Call "studentActions->executeList()"
+May 15 15:53:47 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 15:53:47 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `student`
+May 15 15:53:47 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/listSuccess.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_header.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_messages.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_th_tabular.php"
+May 15 15:53:47 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` LIMIT 20
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_batch_actions.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_tabular.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_actions.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_batch_actions.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_tabular.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_actions.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_batch_actions.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_actions.php"
+May 15 15:53:47 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_footer.php"
+May 15 15:53:47 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 15:53:47 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 15:53:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 15:53:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Configuration 48.63 ms (15)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Action "student/index" 64.50 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Action "student/list" 14.21 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} View "Success" for "student/list" 45.88 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_header" 0.27 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_messages" 0.98 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list" 32.51 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_th_tabular" 1.34 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_batch_actions" 0.49 ms (2)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_tabular" 27.67 ms (2)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_actions" 0.48 ms (2)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_batch_actions" 0.22 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_actions" 0.41 ms (1)
+May 15 15:53:47 symfony [info] {sfWebDebugLogger} Partial "student/_list_footer" 0.23 ms (1)
+May 15 15:53:47 symfony [info] {sfWebResponse} Send content (36637 o)
+May 15 15:54:25 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 15:54:25 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 15:54:25 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 15:54:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/edit/id/1 with parameters array (  'id' => '1',  'module' => 'student',  'action' => 'edit',)
+May 15 15:54:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 15:54:25 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 15:54:25 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 15:54:25 symfony [info] {studentActions} Call "studentActions->executeEdit()"
+May 15 15:54:25 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 15:54:25 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` WHERE student.ID=:p1
+May 15 15:54:25 symfony [debug] {sfPropelLogger} Binding '1' at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 15:54:25 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/editSuccess.php"
+May 15 15:54:25 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_header.php"
+May 15 15:54:25 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_messages.php"
+May 15 15:54:25 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_form.php"
+May 15 15:54:25 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher`
+May 15 15:54:25 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_actions.php"
+May 15 15:54:25 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_footer.php"
+May 15 15:54:25 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 15:54:25 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 15:54:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 15:54:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 15:54:25 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (10)
+May 15 15:54:25 symfony [info] {sfWebDebugLogger} Action "student/edit" 33.55 ms (1)
+May 15 15:54:25 symfony [info] {sfWebDebugLogger} View "Success" for "student/edit" 23.27 ms (1)
+May 15 15:54:25 symfony [info] {sfWebDebugLogger} Partial "student/_edit_header" 0.27 ms (1)
+May 15 15:54:25 symfony [info] {sfWebDebugLogger} Partial "student/_edit_messages" 1.04 ms (1)
+May 15 15:54:25 symfony [info] {sfWebDebugLogger} Partial "student/_edit_form" 10.96 ms (1)
+May 15 15:54:25 symfony [info] {sfWebDebugLogger} Partial "student/_edit_actions" 0.58 ms (1)
+May 15 15:54:25 symfony [info] {sfWebDebugLogger} Partial "student/_edit_footer" 0.24 ms (1)
+May 15 15:54:25 symfony [info] {sfWebResponse} Send content (32677 o)
+May 15 15:54:38 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 15:54:38 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 15:54:38 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 15:54:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/save with parameters array (  'module' => 'student',  'action' => 'save',)
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 15:54:38 symfony [info] {studentActions} Call "studentActions->executeSave()"
+May 15 15:54:38 symfony [info] {studentActions} Forward to action "student/edit"
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 15:54:38 symfony [info] {studentActions} Call "studentActions->executeEdit()"
+May 15 15:54:38 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 15:54:38 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` WHERE student.ID=:p1
+May 15 15:54:38 symfony [debug] {sfPropelLogger} Binding '1' at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 15:54:38 symfony [debug] {sfPropelLogger} prepare: UPDATE student SET `GRADE`=:p1, `TEACHER_ID`=:p2, `CREATED_AT`=:p3 WHERE student.ID=:p4
+May 15 15:54:38 symfony [debug] {sfPropelLogger} Binding 3 at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 15:54:38 symfony [debug] {sfPropelLogger} Binding 3 at position :p2 w/ PDO type PDO::PARAM_INT
+May 15 15:54:38 symfony [debug] {sfPropelLogger} Binding '2013-05-14 14:32:00' at position :p3 w/ PDO type PDO::PARAM_STR
+May 15 15:54:38 symfony [debug] {sfPropelLogger} Binding 1 at position :p4 w/ PDO type PDO::PARAM_INT
+May 15 15:54:38 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8080/backend_dev.php/student/edit/id/1"
+May 15 15:54:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 15 15:54:38 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8080/backend_dev.php/student/edit/id/1"
+May 15 15:54:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Configuration 1.35 ms (13)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Action "student/save" 39.53 ms (1)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Action "student/edit" 37.47 ms (1)
+May 15 15:54:38 symfony [info] {sfWebResponse} Send content (126 o)
+May 15 15:54:38 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 15:54:38 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 15:54:38 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 15:54:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/edit/id/1 with parameters array (  'id' => '1',  'module' => 'student',  'action' => 'edit',)
+May 15 15:54:38 symfony [info] {myUser} Flag old flash messages ("notice")
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 15:54:38 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 15:54:38 symfony [info] {studentActions} Call "studentActions->executeEdit()"
+May 15 15:54:38 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 15:54:38 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` WHERE student.ID=:p1
+May 15 15:54:38 symfony [debug] {sfPropelLogger} Binding '1' at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 15:54:38 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/editSuccess.php"
+May 15 15:54:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_header.php"
+May 15 15:54:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_messages.php"
+May 15 15:54:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_form.php"
+May 15 15:54:38 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher`
+May 15 15:54:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_actions.php"
+May 15 15:54:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_footer.php"
+May 15 15:54:38 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 15:54:38 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 15:54:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 15:54:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Configuration 1.00 ms (10)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Action "student/edit" 10.83 ms (1)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} View "Success" for "student/edit" 22.64 ms (1)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Partial "student/_edit_header" 0.27 ms (1)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Partial "student/_edit_messages" 0.95 ms (1)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Partial "student/_edit_form" 10.99 ms (1)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Partial "student/_edit_actions" 0.57 ms (1)
+May 15 15:54:38 symfony [info] {sfWebDebugLogger} Partial "student/_edit_footer" 0.24 ms (1)
+May 15 15:54:38 symfony [info] {sfWebResponse} Send content (33429 o)
+May 15 15:54:38 symfony [info] {myUser} Remove old flash messages ("notice")
+May 15 16:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:11:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/list/id/1 with parameters array (  'id' => '1',  'module' => 'student',  'action' => 'list',)
+May 15 16:11:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:11:01 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:11:01 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:11:01 symfony [info] {studentActions} Call "studentActions->executeList()"
+May 15 16:11:01 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:11:01 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `student`
+May 15 16:11:01 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/listSuccess.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_header.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_messages.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_th_tabular.php"
+May 15 16:11:01 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` LIMIT 20
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_batch_actions.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_tabular.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_actions.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_batch_actions.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_tabular.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_actions.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_batch_actions.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_actions.php"
+May 15 16:11:01 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_footer.php"
+May 15 16:11:01 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:11:01 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:11:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:11:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (10)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Action "student/list" 10.52 ms (1)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} View "Success" for "student/list" 22.05 ms (1)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_header" 0.27 ms (1)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_messages" 1.08 ms (1)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list" 10.62 ms (1)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_th_tabular" 1.28 ms (1)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_batch_actions" 0.48 ms (2)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_tabular" 5.94 ms (2)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_actions" 0.49 ms (2)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_batch_actions" 0.24 ms (1)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_actions" 0.43 ms (1)
+May 15 16:11:01 symfony [info] {sfWebDebugLogger} Partial "student/_list_footer" 0.24 ms (1)
+May 15 16:11:01 symfony [info] {sfWebResponse} Send content (35265 o)
+May 15 16:14:13 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:14:13 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:14:13 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:14:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /teacher with parameters array (  'module' => 'teacher',  'action' => 'index',)
+May 15 16:14:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:14:13 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:14:13 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:14:13 symfony [info] {teacherActions} Call "teacherActions->executeIndex()"
+May 15 16:14:13 symfony [info] {teacherActions} Forward to action "teacher/list"
+May 15 16:14:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:14:13 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:14:13 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:14:13 symfony [info] {teacherActions} Call "teacherActions->executeList()"
+May 15 16:14:13 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:14:13 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `teacher`
+May 15 16:14:13 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/listSuccess.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_header.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_messages.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_th_tabular.php"
+May 15 16:14:13 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` LIMIT 20
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_batch_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_actions.php"
+May 15 16:14:13 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_footer.php"
+May 15 16:14:13 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:14:13 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:14:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:14:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Configuration 41.29 ms (15)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Action "teacher/index" 42.78 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Action "teacher/list" 5.48 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/list" 31.79 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_header" 0.27 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_messages" 0.98 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list" 18.46 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_th_tabular" 1.14 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_batch_actions" 1.60 ms (7)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_tabular" 9.25 ms (7)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_actions" 1.60 ms (7)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_batch_actions" 0.23 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_actions" 0.42 ms (1)
+May 15 16:14:13 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_footer" 0.23 ms (1)
+May 15 16:14:13 symfony [info] {sfWebResponse} Send content (42703 o)
+May 15 16:14:19 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:14:19 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:14:19 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:14:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/edit/id/6 with parameters array (  'id' => '6',  'module' => 'teacher',  'action' => 'edit',)
+May 15 16:14:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:14:19 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:14:19 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:14:19 symfony [info] {teacherActions} Call "teacherActions->executeEdit()"
+May 15 16:14:19 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:14:19 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` WHERE teacher.ID=:p1
+May 15 16:14:19 symfony [debug] {sfPropelLogger} Binding '6' at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 16:14:19 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/editSuccess.php"
+May 15 16:14:19 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_header.php"
+May 15 16:14:19 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_messages.php"
+May 15 16:14:19 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_form.php"
+May 15 16:14:19 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_actions.php"
+May 15 16:14:19 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_footer.php"
+May 15 16:14:19 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:14:19 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:14:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:14:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:14:19 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (10)
+May 15 16:14:19 symfony [info] {sfWebDebugLogger} Action "teacher/edit" 10.70 ms (1)
+May 15 16:14:19 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/edit" 18.92 ms (1)
+May 15 16:14:19 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_header" 0.27 ms (1)
+May 15 16:14:19 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_messages" 0.93 ms (1)
+May 15 16:14:19 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_form" 6.98 ms (1)
+May 15 16:14:19 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_actions" 0.55 ms (1)
+May 15 16:14:19 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_footer" 0.23 ms (1)
+May 15 16:14:19 symfony [info] {sfWebResponse} Send content (32267 o)
+May 15 16:14:32 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:14:32 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:14:32 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:14:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/list/id/6 with parameters array (  'id' => '6',  'module' => 'teacher',  'action' => 'list',)
+May 15 16:14:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:14:32 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:14:32 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:14:32 symfony [info] {teacherActions} Call "teacherActions->executeList()"
+May 15 16:14:32 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:14:32 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `teacher`
+May 15 16:14:32 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/listSuccess.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_header.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_messages.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_th_tabular.php"
+May 15 16:14:32 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` LIMIT 20
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_batch_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_actions.php"
+May 15 16:14:32 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_footer.php"
+May 15 16:14:32 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:14:32 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:14:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:14:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (10)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Action "teacher/list" 10.22 ms (1)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/list" 28.95 ms (1)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_header" 0.25 ms (1)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_messages" 0.96 ms (1)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list" 18.10 ms (1)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_th_tabular" 1.09 ms (1)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_batch_actions" 1.54 ms (7)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_tabular" 9.22 ms (7)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_actions" 1.60 ms (7)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_batch_actions" 0.22 ms (1)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_actions" 0.40 ms (1)
+May 15 16:14:32 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_footer" 0.29 ms (1)
+May 15 16:14:32 symfony [info] {sfWebResponse} Send content (41194 o)
+May 15 16:15:48 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:15:48 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:15:48 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:15:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/edit/id/2 with parameters array (  'id' => '2',  'module' => 'student',  'action' => 'edit',)
+May 15 16:15:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:15:48 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:15:48 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:15:48 symfony [info] {studentActions} Call "studentActions->executeEdit()"
+May 15 16:15:48 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:15:48 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` WHERE student.ID=:p1
+May 15 16:15:48 symfony [debug] {sfPropelLogger} Binding '2' at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 16:15:48 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/editSuccess.php"
+May 15 16:15:48 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_header.php"
+May 15 16:15:48 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_messages.php"
+May 15 16:15:48 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_form.php"
+May 15 16:15:48 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher`
+May 15 16:15:48 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_actions.php"
+May 15 16:15:48 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_footer.php"
+May 15 16:15:48 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:15:48 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:15:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:15:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:15:48 symfony [info] {sfWebDebugLogger} Configuration 33.65 ms (11)
+May 15 16:15:48 symfony [info] {sfWebDebugLogger} Action "student/edit" 4.89 ms (1)
+May 15 16:15:48 symfony [info] {sfWebDebugLogger} View "Success" for "student/edit" 20.41 ms (1)
+May 15 16:15:48 symfony [info] {sfWebDebugLogger} Partial "student/_edit_header" 0.28 ms (1)
+May 15 16:15:48 symfony [info] {sfWebDebugLogger} Partial "student/_edit_messages" 0.94 ms (1)
+May 15 16:15:48 symfony [info] {sfWebDebugLogger} Partial "student/_edit_form" 8.32 ms (1)
+May 15 16:15:48 symfony [info] {sfWebDebugLogger} Partial "student/_edit_actions" 0.59 ms (1)
+May 15 16:15:48 symfony [info] {sfWebDebugLogger} Partial "student/_edit_footer" 0.23 ms (1)
+May 15 16:15:48 symfony [info] {sfWebResponse} Send content (32843 o)
+May 15 16:27:49 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:27:49 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:27:49 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:27:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/edit/id/5 with parameters array (  'id' => '5',  'module' => 'teacher',  'action' => 'edit',)
+May 15 16:27:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:27:49 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:27:49 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:27:49 symfony [info] {teacherActions} Call "teacherActions->executeEdit()"
+May 15 16:27:49 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:27:49 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` WHERE teacher.ID=:p1
+May 15 16:27:49 symfony [debug] {sfPropelLogger} Binding '5' at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 16:27:49 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/editSuccess.php"
+May 15 16:27:49 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_header.php"
+May 15 16:27:49 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_messages.php"
+May 15 16:27:49 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_form.php"
+May 15 16:27:49 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_actions.php"
+May 15 16:27:49 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_edit_footer.php"
+May 15 16:27:49 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:27:49 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:27:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:27:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:27:49 symfony [info] {sfWebDebugLogger} Configuration 1.04 ms (10)
+May 15 16:27:49 symfony [info] {sfWebDebugLogger} Action "teacher/edit" 10.79 ms (1)
+May 15 16:27:49 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/edit" 18.71 ms (1)
+May 15 16:27:49 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_header" 0.26 ms (1)
+May 15 16:27:49 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_messages" 0.95 ms (1)
+May 15 16:27:49 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_form" 7.10 ms (1)
+May 15 16:27:49 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_actions" 0.57 ms (1)
+May 15 16:27:49 symfony [info] {sfWebDebugLogger} Partial "teacher/_edit_footer" 0.23 ms (1)
+May 15 16:27:49 symfony [info] {sfWebResponse} Send content (32276 o)
+May 15 16:32:33 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:32:33 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:32:33 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:32:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/list/id/5 with parameters array (  'id' => '5',  'module' => 'teacher',  'action' => 'list',)
+May 15 16:32:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:32:33 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:32:33 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:32:33 symfony [info] {teacherActions} Call "teacherActions->executeList()"
+May 15 16:32:33 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:32:33 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `teacher`
+May 15 16:32:33 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/listSuccess.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_header.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_messages.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_th_tabular.php"
+May 15 16:32:33 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` LIMIT 20
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_batch_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_actions.php"
+May 15 16:32:33 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_footer.php"
+May 15 16:32:33 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:33 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:32:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (10)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Action "teacher/list" 10.14 ms (1)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/list" 29.47 ms (1)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_header" 0.27 ms (1)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_messages" 0.98 ms (1)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list" 18.47 ms (1)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_th_tabular" 1.12 ms (1)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_batch_actions" 1.56 ms (7)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_tabular" 9.30 ms (7)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_actions" 1.65 ms (7)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_batch_actions" 0.23 ms (1)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_actions" 0.42 ms (1)
+May 15 16:32:33 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_footer" 0.24 ms (1)
+May 15 16:32:33 symfony [info] {sfWebResponse} Send content (41194 o)
+May 15 16:32:35 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:32:35 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:32:35 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:32:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/list/sort/name/type/asc with parameters array (  'sort' => 'name',  'type' => 'asc',  'module' => 'teacher',  'action' => 'list',)
+May 15 16:32:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:32:35 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:32:35 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:32:35 symfony [info] {teacherActions} Call "teacherActions->executeList()"
+May 15 16:32:35 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:32:35 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `teacher`
+May 15 16:32:35 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/listSuccess.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_header.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_messages.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_th_tabular.php"
+May 15 16:32:35 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` ORDER BY teacher.NAME ASC LIMIT 20
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_batch_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_actions.php"
+May 15 16:32:35 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_footer.php"
+May 15 16:32:35 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:35 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:32:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (10)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Action "teacher/list" 10.30 ms (1)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/list" 29.96 ms (1)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_header" 0.24 ms (1)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_messages" 0.95 ms (1)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list" 19.17 ms (1)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_th_tabular" 1.11 ms (1)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_batch_actions" 1.61 ms (7)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_tabular" 9.16 ms (7)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_actions" 1.62 ms (7)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_batch_actions" 0.22 ms (1)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_actions" 0.41 ms (1)
+May 15 16:32:35 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_footer" 0.22 ms (1)
+May 15 16:32:35 symfony [info] {sfWebResponse} Send content (41405 o)
+May 15 16:32:36 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:32:36 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:32:36 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:32:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/list/sort/name/type/desc with parameters array (  'sort' => 'name',  'type' => 'desc',  'module' => 'teacher',  'action' => 'list',)
+May 15 16:32:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:32:36 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:32:36 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:32:36 symfony [info] {teacherActions} Call "teacherActions->executeList()"
+May 15 16:32:36 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:32:36 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `teacher`
+May 15 16:32:36 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/listSuccess.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_header.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_messages.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_th_tabular.php"
+May 15 16:32:36 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` ORDER BY teacher.NAME DESC LIMIT 20
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_batch_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_actions.php"
+May 15 16:32:36 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_footer.php"
+May 15 16:32:36 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:36 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:32:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Configuration 1.00 ms (10)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Action "teacher/list" 10.33 ms (1)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/list" 29.89 ms (1)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_header" 0.24 ms (1)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_messages" 0.95 ms (1)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list" 19.11 ms (1)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_th_tabular" 1.11 ms (1)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_batch_actions" 1.58 ms (7)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_tabular" 9.22 ms (7)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_actions" 1.62 ms (7)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_batch_actions" 0.22 ms (1)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_actions" 0.40 ms (1)
+May 15 16:32:36 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_footer" 0.22 ms (1)
+May 15 16:32:36 symfony [info] {sfWebResponse} Send content (41478 o)
+May 15 16:32:38 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:32:38 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:32:38 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:32:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/list/sort/id/type/asc with parameters array (  'sort' => 'id',  'type' => 'asc',  'module' => 'teacher',  'action' => 'list',)
+May 15 16:32:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:32:38 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:32:38 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:32:38 symfony [info] {teacherActions} Call "teacherActions->executeList()"
+May 15 16:32:38 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:32:38 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `teacher`
+May 15 16:32:38 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/listSuccess.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_header.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_messages.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_th_tabular.php"
+May 15 16:32:38 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` ORDER BY teacher.ID ASC LIMIT 20
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_batch_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_actions.php"
+May 15 16:32:38 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_footer.php"
+May 15 16:32:38 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:38 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:32:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Configuration 1.00 ms (10)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Action "teacher/list" 10.27 ms (1)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/list" 29.89 ms (1)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_header" 0.25 ms (1)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_messages" 0.95 ms (1)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list" 19.13 ms (1)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_th_tabular" 1.12 ms (1)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_batch_actions" 1.60 ms (7)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_tabular" 9.22 ms (7)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_actions" 1.61 ms (7)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_batch_actions" 0.22 ms (1)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_actions" 0.40 ms (1)
+May 15 16:32:38 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_footer" 0.22 ms (1)
+May 15 16:32:38 symfony [info] {sfWebResponse} Send content (41453 o)
+May 15 16:32:41 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:32:41 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:32:41 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:32:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/list/sort/id/type/desc with parameters array (  'sort' => 'id',  'type' => 'desc',  'module' => 'teacher',  'action' => 'list',)
+May 15 16:32:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:32:41 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:32:41 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:32:41 symfony [info] {teacherActions} Call "teacherActions->executeList()"
+May 15 16:32:41 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:32:41 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `teacher`
+May 15 16:32:41 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/listSuccess.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_header.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_messages.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_th_tabular.php"
+May 15 16:32:41 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` ORDER BY teacher.ID DESC LIMIT 20
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_batch_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_actions.php"
+May 15 16:32:41 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_footer.php"
+May 15 16:32:41 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:41 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:32:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (10)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Action "teacher/list" 10.27 ms (1)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/list" 30.11 ms (1)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_header" 0.24 ms (1)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_messages" 0.99 ms (1)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list" 19.18 ms (1)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_th_tabular" 1.13 ms (1)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_batch_actions" 1.65 ms (7)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_tabular" 9.19 ms (7)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_actions" 1.62 ms (7)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_batch_actions" 0.22 ms (1)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_actions" 0.41 ms (1)
+May 15 16:32:41 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_footer" 0.22 ms (1)
+May 15 16:32:41 symfony [info] {sfWebResponse} Send content (41456 o)
+May 15 16:32:42 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:32:42 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:32:42 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:32:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /teacher/list/sort/id/type/asc with parameters array (  'sort' => 'id',  'type' => 'asc',  'module' => 'teacher',  'action' => 'list',)
+May 15 16:32:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:32:42 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:32:42 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:32:42 symfony [info] {teacherActions} Call "teacherActions->executeList()"
+May 15 16:32:42 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:32:42 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `teacher`
+May 15 16:32:42 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/listSuccess.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_header.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_messages.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_th_tabular.php"
+May 15 16:32:42 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher` ORDER BY teacher.ID ASC LIMIT 20
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_batch_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_tabular.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_td_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_batch_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_actions.php"
+May 15 16:32:42 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoTeacher/templates/_list_footer.php"
+May 15 16:32:42 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:42 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:32:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:32:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Configuration 1.07 ms (10)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Action "teacher/list" 10.42 ms (1)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} View "Success" for "teacher/list" 30.03 ms (1)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_header" 0.25 ms (1)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_messages" 0.96 ms (1)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list" 19.18 ms (1)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_th_tabular" 1.12 ms (1)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_batch_actions" 1.65 ms (7)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_tabular" 9.20 ms (7)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_td_actions" 1.64 ms (7)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_batch_actions" 0.23 ms (1)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_actions" 0.49 ms (1)
+May 15 16:32:42 symfony [info] {sfWebDebugLogger} Partial "teacher/_list_footer" 0.22 ms (1)
+May 15 16:32:42 symfony [info] {sfWebResponse} Send content (41449 o)
+May 15 16:37:21 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:37:21 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:37:21 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:37:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/list/id/2 with parameters array (  'id' => '2',  'module' => 'student',  'action' => 'list',)
+May 15 16:37:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:37:21 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:37:21 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:37:21 symfony [info] {studentActions} Call "studentActions->executeList()"
+May 15 16:37:21 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:37:21 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `student`
+May 15 16:37:21 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/listSuccess.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_header.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_messages.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_th_tabular.php"
+May 15 16:37:21 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` LIMIT 20
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_batch_actions.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_tabular.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_actions.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_batch_actions.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_tabular.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_actions.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_batch_actions.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_actions.php"
+May 15 16:37:21 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_footer.php"
+May 15 16:37:21 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:37:21 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:37:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:37:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (10)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Action "student/list" 10.47 ms (1)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} View "Success" for "student/list" 21.62 ms (1)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_header" 0.24 ms (1)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_messages" 1.08 ms (1)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list" 10.52 ms (1)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_th_tabular" 1.27 ms (1)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_batch_actions" 0.47 ms (2)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_tabular" 5.93 ms (2)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_actions" 0.46 ms (2)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_batch_actions" 0.22 ms (1)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_actions" 0.41 ms (1)
+May 15 16:37:21 symfony [info] {sfWebDebugLogger} Partial "student/_list_footer" 0.23 ms (1)
+May 15 16:37:21 symfony [info] {sfWebResponse} Send content (35362 o)
+May 15 16:39:53 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:39:53 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:39:53 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:39:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/list/id/2 with parameters array (  'id' => '2',  'module' => 'student',  'action' => 'list',)
+May 15 16:39:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:39:53 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:39:53 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:39:53 symfony [info] {studentActions} Call "studentActions->executeList()"
+May 15 16:39:53 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:39:53 symfony [debug] {sfPropelLogger} prepare: SELECT COUNT(*) FROM `student`
+May 15 16:39:53 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/listSuccess.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_header.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_messages.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_th_tabular.php"
+May 15 16:39:53 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` LIMIT 20
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_batch_actions.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_tabular.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_actions.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_batch_actions.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_tabular.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_td_actions.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_batch_actions.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_actions.php"
+May 15 16:39:53 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_list_footer.php"
+May 15 16:39:53 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:39:53 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:39:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:39:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Configuration 34.68 ms (11)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Action "student/list" 5.12 ms (1)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} View "Success" for "student/list" 52.71 ms (1)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_header" 0.25 ms (1)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_messages" 1.02 ms (1)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list" 41.79 ms (1)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_th_tabular" 1.33 ms (1)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_batch_actions" 0.54 ms (2)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_tabular" 5.87 ms (2)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_td_actions" 31.61 ms (2)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_batch_actions" 0.23 ms (1)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_actions" 0.41 ms (1)
+May 15 16:39:53 symfony [info] {sfWebDebugLogger} Partial "student/_list_footer" 0.23 ms (1)
+May 15 16:39:53 symfony [info] {sfWebResponse} Send content (36507 o)
+May 15 16:40:05 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 15 16:40:05 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 15 16:40:05 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 15 16:40:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/edit/id/2 with parameters array (  'id' => '2',  'module' => 'student',  'action' => 'edit',)
+May 15 16:40:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 16:40:05 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 15 16:40:05 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 15 16:40:05 symfony [info] {studentActions} Call "studentActions->executeEdit()"
+May 15 16:40:05 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 15 16:40:05 symfony [debug] {sfPropelLogger} prepare: SELECT student.ID, student.NAME, student.GRADE, student.TEACHER_ID, student.CREATED_AT FROM `student` WHERE student.ID=:p1
+May 15 16:40:05 symfony [debug] {sfPropelLogger} Binding '2' at position :p1 w/ PDO type PDO::PARAM_INT
+May 15 16:40:05 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/editSuccess.php"
+May 15 16:40:05 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_header.php"
+May 15 16:40:05 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_messages.php"
+May 15 16:40:05 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_form.php"
+May 15 16:40:05 symfony [debug] {sfPropelLogger} prepare: SELECT teacher.ID, teacher.NAME, teacher.TYPE, teacher.CREATED_AT FROM `teacher`
+May 15 16:40:05 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_actions.php"
+May 15 16:40:05 symfony [info] {sfPartialView} Render "/Library/WebServer/Documents/roy/sfproject/test/cache/backend/dev/modules/autoStudent/templates/_edit_footer.php"
+May 15 16:40:05 symfony [info] {sfPHPView} Decorate content with "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:40:05 symfony [info] {sfPHPView} Render "/Library/WebServer/Documents/roy/sfproject/test/apps/backend/templates/layout.php"
+May 15 16:40:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 16:40:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 16:40:05 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (10)
+May 15 16:40:05 symfony [info] {sfWebDebugLogger} Action "student/edit" 11.41 ms (1)
+May 15 16:40:05 symfony [info] {sfWebDebugLogger} View "Success" for "student/edit" 22.69 ms (1)
+May 15 16:40:05 symfony [info] {sfWebDebugLogger} Partial "student/_edit_header" 0.28 ms (1)
+May 15 16:40:05 symfony [info] {sfWebDebugLogger} Partial "student/_edit_messages" 1.01 ms (1)
+May 15 16:40:05 symfony [info] {sfWebDebugLogger} Partial "student/_edit_form" 10.97 ms (1)
+May 15 16:40:05 symfony [info] {sfWebDebugLogger} Partial "student/_edit_actions" 0.59 ms (1)
+May 15 16:40:05 symfony [info] {sfWebDebugLogger} Partial "student/_edit_footer" 0.24 ms (1)
+May 15 16:40:05 symfony [info] {sfWebResponse} Send content (32942 o)

@@ -1,14 +1,8 @@
 propel:
-  student:
-    _attributes: { phpName: Student }
+  user:
+    _attributes: { phpName: User }
     id:
-    name:        varchar(255)
-    grade:       integer
-    teacher_id:  
-    created_at:
-  teacher:
-    _attributes: { phpName: Teacher }
-    id:
-    name:        varchar(255)
-    type:        varchar(255)
+    username:    varchar(255)
+    email:       varchar(255)
+    password:    varchar(255)
     created_at:

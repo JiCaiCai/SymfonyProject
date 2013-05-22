@@ -26,12 +26,37 @@ class homeGuestActions extends sfActions
 //     echo $TestParams['class']->price."<br />";
   	//die();
   	
+  	// 测试JSON
+//   	$student = new Student();
+//   	$student->setName('Roy');
+//   	$student->setId(3);
+//   	$student->setGrade(3);
+//   	$student->setCreatedAt(date('Y-m-d H:i:s'));
+  	
+//   	echo '<pre>';
+//   	print_r($student);
+//   	echo '</pre>';
+  	
+//   	$json_student = json_encode($obj);
+//   	echo '<pre>';
+//   	print_r($json_student);
+//   	echo '</pre>';
+
+  	
   	echo $this->getRequestParameter('nickname')."<br />";
   	echo $this->getRequestParameter('activationcode');
   	
     $this->card_list = array('VISA'=>'Visa','MAST'=>'Master','AMEX'=>'American Express');
     $this->grade_list = array('GradeOne'=>'一年级','GradeTwo'=>'二年级','GradeThree'=>'三年级');
     return sfView::SUCCESS;
+  }
+  
+  /**
+   * The Homepage of website
+   */
+  public function executeHome()
+  {
+  	return sfView::SUCCESS;
   }
 
   /**
@@ -41,22 +66,45 @@ class homeGuestActions extends sfActions
    */
   public function executeLogin($request)
   {
-    $this->UserName =  $this->getRequestParameter('username');
-    $this->password =  $this->getRequestParameter('password');
+    $username =  $this->getRequestParameter('username');
+    $password =  md5($this->getRequestParameter('password'));
+    $loginkeeping = $this->getRequestParameter('loginkeeping');
     
-    // 查询数据库
     $c = new Criteria();
-    $c->setLimit(5);
-    $Students = StudentPeer::doSelectOne($c);
     
-    if ($this->UserName==='roy' && $this->password==='10093633')
-    {
-      $this->getUser()->setAuthenticated(true);
-      return sfView::SUCCESS;
+    $c1 = $c->getNewCriterion(UserPeer::USERNAME, $username);
+    $c2 = $c->getNewCriterion(UserPeer::EMAIL, $username);
+    $c1->addOr($c2);
+    
+    $c->add($c1);
+    $c->add(UserPeer::PASSWORD,$password);
+    
+    $this->user = UserPeer::doSelectOne($c);
+    
+    if (!is_null($this->user)) {
+    	return sfView::SUCCESS;
     } else {
-      $this->getUser()->setAuthenticated(false);
-      return sfView::ERROR;
-    } 
+    	return sfView::ERROR;
+    }
+  }
+  
+  /**
+   * 注册
+   * @return string
+   */
+  public function executeRegister()
+  {
+  	$usernamesignup =  $this->getRequestParameter('usernamesignup');
+  	$emailsignup =  $this->getRequestParameter('emailsignup');
+  	$passwordsignup = md5($this->getRequestParameter('passwordsignup'));
+  	
+  	$user = new User();
+  	$user->setUsername($usernamesignup);
+  	$user->setEmail($emailsignup);
+  	$user->setPassword($passwordsignup);
+  	$user->save();
+  	
+  	return $this->redirect('/');
   }
 
   /**
@@ -107,40 +155,72 @@ class homeGuestActions extends sfActions
 //     $student->setName($student_name);
 //     $student->setGrade(1);
 //     $student->save();
-    $teacher = new Teacher();
-    $teacher->setName($student_name);
-    $teacher->setType('physics');
-    $teacher->save();
+//     $teacher = new Teacher();
+//     $teacher->setName($student_name);
+//     $teacher->setType('physics');
+//     $teacher->save();
     
     // 修改
     
     // 查询
+//     $c = new Criteria();
+//     $c->addDescendingOrderByColumn(StudentPeer::CREATED_AT);
+//     $c->setLimit(5);
+//     $Students = StudentPeer::doSelect($c);
+    
+//     foreach ($Students as $student)
+//     {
+//     	echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
+    	
+//     	echo '<pre>';
+//     	print_r($student->getTeacher()); 
+//     	echo '</pre>';
+//     }
+    
     $c = new Criteria();
-    $c->addDescendingOrderByColumn(StudentPeer::CREATED_AT);
-    $c->setLimit(5);
-    $Students = StudentPeer::doSelect($c);
+    $c->addAscendingOrderByColumn(TeacherPeer::CREATED_AT);
+    $pager = new sfPropelPager('Teacher', 10);
+    $pager->setCriteria($c);
+    $pager->setPage($this->getRequestParameter('page', 1));
+    $pager->init();
+    $this->pager = $pager;
     
-    foreach ($Students as $student)
-    {
-    	echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
-    }
+    $this->setTemplate('list');
     
-    $id = 1;
+//     $id = 1;
     
-    $teacher = TeacherPeer::retrieveByPK($id);
-    $student = StudentPeer::retrieveByPK($id);
+//     $teacher = TeacherPeer::retrieveByPK($id);
+//     $student = StudentPeer::retrieveByPK($id);
     
-    echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
-    $student->setName('Swift');
-    $student->setTeacherId($teacher->getId());
-    StudentPeer::doUpdate($student);
-    $student = StudentPeer::retrieveByPK($id);
-    echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
+//     echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
+//     $student->setName('Swift');
+//     $student->setTeacherId($teacher->getId());
+//     StudentPeer::doUpdate($student);
+//     $student = StudentPeer::retrieveByPK($id);
+//     echo 'ID: '.$student->getId().' Name: '.$student->getName().' Teacher ID: '.$student->getTeacherId().' Created Time: '.$student->getCreatedAt()." <br />";
     
     // 删除
 //     $Students[0]->delete();
     
-    return $this->renderText("<html><body>  Database operation success !</body></html>");
+    // 左连接
+//     echo "<br />"."<br />";
+//     $c = new Criteria();
+// //     $c->addDescendingOrderByColumn(StudentPeer::CREATED_AT);
+//     $Students = StudentPeer::doSelectJoinTeacher($c,null,Criteria::LEFT_JOIN);
+    
+// //     echo '<pre>';
+// //     print_r($Students);
+// //     echo '</pre>';
+    
+//     foreach ($Students as $student)
+//     {
+//     	echo '<pre>';
+//     	print_r($student->getTeacher());
+//     	echo '</pre>';
+//     	echo '<br />';
+//     }
+    
+//     return $this->renderText("<html><body>  Database operation success !</body></html>");
   }
   
   /**
@@ -156,7 +236,19 @@ class homeGuestActions extends sfActions
    */
   public function executeValidUsername()
   {
-  	return $this->renderText("<strong>This is modified by Ajax! Time: ".date('Y-m-d H:i:s')."</ strong>");
+  	$username =  $this->getRequestParameter('username');
+  	
+  	// 查询数据库
+  	$c = new Criteria();
+  	$c->add(StudentPeer::NAME, $username);
+  	$student = StudentPeer::doSelectOne($c);
+  	
+  	if (isset($student) && !empty($student))
+  	{
+  		return $this->renderText("<strong>正确：存在该用户名</ strong>");
+  	}else {
+  		return $this->renderText("<strong>错误：不存在该用户名</ strong>");
+  	}
   }
 }
 

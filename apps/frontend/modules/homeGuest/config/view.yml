@@ -15,3 +15,23 @@ default:
 
   has_layout:     on
   layout:         layout
+
+homeSuccess:
+  http_metas:
+    content-type: text/html
+    charset:      UTF-8
+
+  metas:
+    title:        Roy Studio
+    description:  Login and Registration Form with HTML5 and CSS3
+    keywords:     html5, css3, form, switch, animation, :target, pseudo-class
+    language:     en
+    robots:       index, follow
+    viewport:     width=device-width, initial-scale=1.0
+
+  stylesheets:    [animate-custom.css, demo.css, style.css]
+
+  javascripts:    []
+
+  has_layout:     off
+  

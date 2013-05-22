@@ -1,0 +1,13 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Student
+    theme:            default
+
+    list:
+      title: Test
+      object_actions: 
+        _edit:
+        _delete: 
+      actions:
+        _create:

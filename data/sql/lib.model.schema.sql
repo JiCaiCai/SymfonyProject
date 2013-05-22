@@ -4,38 +4,18 @@
 SET FOREIGN_KEY_CHECKS = 0;
 
 #-----------------------------------------------------------------------------
-#-- student
+#-- user
 #-----------------------------------------------------------------------------
 
-DROP TABLE IF EXISTS `student`;
+DROP TABLE IF EXISTS `user`;
 
 
-CREATE TABLE `student`
+CREATE TABLE `user`
 (
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
-	`name` VARCHAR(255),
-	`grade` INTEGER,
-	`teacher_id` INTEGER,
-	`created_at` DATETIME,
-	PRIMARY KEY (`id`),
-	INDEX `student_FI_1` (`teacher_id`),
-	CONSTRAINT `student_FK_1`
-		FOREIGN KEY (`teacher_id`)
-		REFERENCES `teacher` (`id`)
-)Type=InnoDB;
-
-#-----------------------------------------------------------------------------
-#-- teacher
-#-----------------------------------------------------------------------------
-
-DROP TABLE IF EXISTS `teacher`;
-
-
-CREATE TABLE `teacher`
-(
-	`id` INTEGER  NOT NULL AUTO_INCREMENT,
-	`name` VARCHAR(255),
-	`type` VARCHAR(255),
+	`username` VARCHAR(255),
+	`email` VARCHAR(255),
+	`password` VARCHAR(255),
 	`created_at` DATETIME,
 	PRIMARY KEY (`id`)
 )Type=InnoDB;

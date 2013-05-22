@@ -12,7 +12,7 @@ action_to_template:
 # default rules
 homepage:
   url:   /
-  param: { module: homeGuest, action: index }
+  param: { module: homeGuest, action: home }
 
 default_index:
   url:   /:module
